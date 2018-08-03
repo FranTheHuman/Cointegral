@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(43, 42, 42);
+}
+/**********************
+NAV SECTION
+***********************/
+#dropdownmenu{
+    background-color: rgb(43, 42, 42);
+    color: white;
+}
+#navegacion{
+    font-family: 'Gabriela', serif;
+}
+a:link {color:rgb(0, 0, 0);} 
+a:visited {color:rgb(0, 0, 0);} 
+a:active {color:rgb(100, 247, 124);}
+a:hover {color:rgb(100, 247, 124);}
+/**********************
+FOOTER SECTION
+***********************/
+footer{
+    background-color: rgb(56, 55, 55);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+    text-align: left;
+    font-family: 'Gabriela', serif;
+}
+#contenido-Footer{
+    margin-top: 8px;
+}
+/**********************
+TRATAMIENTO SECTION
+***********************/
+#Tratamiento{
+    background-color: rgb(83, 82, 82);
+    color: white;
+    margin-top: 20px;
+}
+#TRATAMIENTOTITLE{
+    font-family: 'Gabriela', serif;
+}

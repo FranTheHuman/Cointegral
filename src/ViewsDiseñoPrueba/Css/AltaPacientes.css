@@ -1,0 +1,76 @@
+body{
+    background-color: rgb(43, 42, 42);
+    color: white;
+}
+/**********************
+NAV SECTION
+***********************/
+#dropdownmenu{
+    background-color: rgb(43, 42, 42);
+    color: white;
+}
+#navegacion{
+    font-family: 'Gabriela', serif;
+}
+/**********************
+FOOTER SECTION
+***********************/
+footer{
+    background-color: rgb(56, 55, 55);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white; 
+    font-family: 'Gabriela', serif; 
+}
+#contenido-Footer{
+    margin-top: 8px;
+}
+/**********************
+FORM SECTION
+***********************/
+#Formulario{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+#TITULO{
+    font-family: 'Gabriela', serif;
+}
+/**********************
+FORM SECTION - CHECKBOX
+***********************/
+#PusBool, #SarroBool{
+    margin-left: 170px;
+}
+#servUrgBool{
+    margin-left: 135px;
+} 
+#HospitBool{
+    margin-left: 25px;
+}
+#BajoTratEnfBool{
+    margin-left: 30px;
+}
+#fumaBool, #bebeBool{
+    margin-left: 230px;
+}
+#EmbarazadaBool{
+    margin-left: 195px;
+}
+#DifHablar{
+    margin-left: 120px;
+}
+#DifMast{
+    margin-left: 110px;
+}
+#MovDient{
+    margin-left: 108px;
+} 
+#DifAbrBoca{
+    margin-left: 80px;
+}
+#SangranEncias{
+    margin-left: 150px;
+}

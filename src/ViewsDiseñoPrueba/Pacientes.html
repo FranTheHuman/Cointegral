@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pacientes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Gabriela" rel="stylesheet">
+    <link rel="stylesheet" href="Css/Pacientes.css">
+</head>
+<body>
+    <nav id="navegacion" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">COINTEGRAL</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#">Inicio</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Pacientes  
+                </a>
+                <div id="dropdownmenu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Nuevo</a>
+                  <a class="dropdown-item" href="#">Pacientes</a>
+              </div>
+            </li>   
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Tratamientos
+                </a>
+                <div id="dropdownmenu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Nuevo</a>
+                  <a class="dropdown-item" href="#">Actuales</a>
+                  <a class="dropdown-item" href="#">Finalizados</a>
+              </div>
+            </li>   
+            <a class="nav-item nav-link" href="#">Turnos</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Datos Varios
+                </a>
+                <div id="dropdownmenu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Odontologos/as</a>
+                  <a class="dropdown-item" href="#">Obras Sociales</a>
+                  <a class="dropdown-item" href="#">Afecciones</a>
+              </div>
+            </li>
+            <a class="nav-item nav-link" href="#">Lista de Precios</a>   
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Sesion
+                </a>
+                <div id="dropdownmenu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Usuario</a>
+                  <a class="dropdown-item" href="#">Cambiar Usuario</a>
+                  <a class="dropdown-item" href="#">Cerrar Sistema</a>
+              </div>
+            </li>   
+        </div>
+      </div>
+    </nav>   
+    <!-- 
+        ***
+            -->
+    <form id="busquedas" class="form-inline">
+        <div class="form-group">
+            <input class="form-control mr-sm-2" type="search" placeholder="Dni" aria-label="Search">
+        </div>
+        <div class="form-group">
+            <input class="form-control mr-sm-2" type="search" placeholder="Nombre" aria-label="Search">
+        </div>
+        <div class="form-group">
+            <input class="form-control mr-sm-2" type="search" placeholder="Apellido" aria-label="Search">
+        </div>
+        <div class="form-group">
+            <input class="form-control mr-sm-2" type="search" placeholder="Palabra clave" aria-label="Search">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </div>
+      </form>
+    <!-- 
+        ***
+            -->
+    <div class="container-fluid">
+      <table id="tabla" class="table table-striped table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">PACIENTE</th>
+            <th scope="col">DNI</th>
+            <th scope="col">OBRA SOCIAL</th>
+            <th scope="col">TELEFONO</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td><a href="#">Facundo Sotto</a></td>
+            <td>31548895</td>
+            <td>OSPAT</td>
+            <td>3624825478</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td><a href="#">Joaquin Caballero</a></td>
+            <td>32548777</td>
+            <td>OSFATUN</td>
+            <td>3324855278</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td><a href="#">Martina Chamello</a></td>
+            <td>31566623</td>
+            <td>OSPAT</td>
+            <td>3534828898</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td><a href="#">Federico Gimenez</a></td>
+            <td>31166895</td>
+            <td>OSPAT</td>
+            <td>3624826666</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td><a href="#">Juan Saad</a></td>
+            <td>31243392</td>
+            <td>OSFATUN</td>
+            <td>3334888978</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td><a href="#">Larry Diaz</a></td>
+            <td>31338225</td>
+            <td>OSPECOR</td>
+            <td>3534825478</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td><a href="#">Marta Gonzales</a></td>
+            <td>41212295</td>
+            <td>PREVENCIÓN SALUD</td>
+            <td>3624823328</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td><a href="#">Antonella Monesterolo</a></td>
+            <td>31541182</td>
+            <td>PAMI</td>
+            <td>3324638278</td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td><a href="#">Lautaro Martinez</a></td>
+            <td>41421158</td>
+            <td>OPDEA</td>
+            <td>3534821617</td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td><a href="#">Lautaro Martinez</a></td>
+            <td>41421158</td>
+            <td>OPDEA</td>
+            <td>3534821617</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td><a href="#">Lautaro Martinez</a></td>
+            <td>41421158</td>
+            <td>OPDEA</td>
+            <td>3534821617</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <!-- 
+        ***
+            -->
+        <footer id="footer">
+          <h1 class="sr-only">Footer section</h1>
+            <div class="container">
+                <div class="row">
+                  <div id="contenido-Footer" class="col-sm-6">
+                    <small class="copyright"> © <span id="year">2018</span> - <a href="http://www.graphberry.com">Francisco Perrotta</a> All Right Reserved</small>
+                  </div>
+                  <div class="col-sm-6">
+                    <ul class="social-list">
+                    </ul>
+                  </div>
+                </div>
+            </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

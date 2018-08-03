@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(43, 42, 42);
+    color: white;
+}
+a:link {color:rgb(0, 0, 0);} 
+a:visited {color:rgb(0, 0, 0);} 
+a:active {color:rgb(100, 247, 124);}
+a:hover {color:rgb(100, 247, 124);}
+/**********************
+NAV SECTION
+***********************/
+#dropdownmenu{
+    background-color: rgb(43, 42, 42);
+    color: white;
+}
+#navegacion{
+    font-family: 'Gabriela', serif;
+}
+/**********************
+SELECCIONAR ESPECIALISTAS
+***********************/
+#SeleccionarDoctor{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+/**********************
+TABLA
+***********************/
+#TABLA{
+    margin-top: 15px;
+}
+/**********************
+MODAL SECTION
+***********************/
+#MODAL{
+    background-color: rgb(83, 82, 82);
+    color: white;
+}

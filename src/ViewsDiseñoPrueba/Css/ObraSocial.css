@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(43, 42, 42);
+}
+#alerta{
+    margin-top: 20px;
+}
+/**********************
+NAV SECTION
+***********************/
+#dropdownmenu{
+    background-color: rgb(43, 42, 42);
+    color: white;
+}
+#navegacion{
+    font-family: 'Gabriela', serif;
+}
+/**********************
+TABLE SECTION
+***********************/
+#tabla{ 
+    margin-top: 20px;
+}
+a:link {color:rgb(255, 255, 255);} 
+a:visited {color:rgb(255, 255, 255);} 
+a:active {color:rgb(100, 247, 124);}
+a:hover {color:rgb(100, 247, 124);}
+/**********************
+MODAL SECTION
+***********************/
+#MODAL{
+    background-color: rgb(83, 82, 82);
+    color: white;
+}

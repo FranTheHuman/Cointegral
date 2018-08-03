@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(43, 42, 42);
+}
+#alerta{
+    margin-top: 20px;
+}
+/**********************
+NAV SECTION
+***********************/
+#dropdownmenu{
+    background-color: rgb(43, 42, 42);
+    color: white;
+}
+#navegacion{
+    font-family: 'Gabriela', serif;
+}
+/**********************
+TABLE SECTION
+***********************/
+#tabla{
+    text-align: center;
+    margin-top: 20px;
+}
+a:link {color:rgb(255, 255, 255);} 
+a:visited {color:rgb(255, 255, 255);} 
+a:active {color:rgb(100, 247, 124);}
+a:hover {color:rgb(100, 247, 124);}
+/**********************
+FOOTER SECTION
+***********************/
+footer{
+    background-color: rgb(56, 55, 55);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+    text-align: left;
+    font-family: 'Gabriela', serif;
+}
+#contenido-Footer{
+    margin-top: 8px;
+}
+

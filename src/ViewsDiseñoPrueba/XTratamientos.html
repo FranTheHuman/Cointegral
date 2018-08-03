@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tratamientos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Gabriela" rel="stylesheet">
+    <link rel="stylesheet" href="Css/Tratamientos.css">
+</head>
+<body>
+    <nav id="navegacion" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">COINTEGRAL</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pacientes
+                    </a>
+                    <div id="dropdownmenu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Nuevo</a>
+                        <a class="dropdown-item" href="#">Pacientes</a>
+                    </div>
+                </li>   
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tratamientos
+                    </a>
+                    <div id="dropdownmenu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Nuevo</a>
+                        <a class="dropdown-item" href="#">Actuales</a>
+                        <a class="dropdown-item" href="#">Finalizados</a>
+                    </div>
+                </li>   
+                <a class="nav-item nav-link" href="#">Turnos</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Datos Varios
+                    </a>
+                    <div id="dropdownmenu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Odontologos/as</a>
+                        <a class="dropdown-item" href="#">Obras Sociales</a>
+                        <a class="dropdown-item" href="#">Afecciones</a>
+                    </div>
+                </li>   
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sesion
+                    </a>
+                    <div id="dropdownmenu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Usuario</a>
+                        <a class="dropdown-item" href="#">Cambiar Usuario</a>
+                        <a class="dropdown-item" href="#">Cerrar Sistema</a>
+                    </div>
+                </li>   
+            </div>
+        </div>
+    </nav>   
+    <!-- 
+        *** BUSQUEDA DE TRATAMIENTOS POR PACIENTE
+            -->
+    <form id="busquedas" class="form-inline">
+        <div class="form-group">
+            <input class="form-control mr-sm-2" type="search" placeholder="Dni" aria-label="Search">
+        </div>
+        <div class="form-group">
+            <input class="form-control mr-sm-2" type="search" placeholder="Nombre" aria-label="Search">
+        </div>
+        <div class="form-group">
+            <input class="form-control mr-sm-2" type="search" placeholder="Apellido" aria-label="Search">
+        </div>
+        <div class="form-group">
+            <input class="form-control mr-sm-2" type="search" placeholder="Palabra clave" aria-label="Search">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </div>
+    </form>
+    <!-- 
+        *** TRATAMIENTOS TABLA
+            -->
+    <div class="container-fluid">
+        <table class="table table-striped table-dark" id="TABLA">
+            <thead>
+                <tr>
+                    <th scope="col">#Tratamiento</th>
+                    <th scope="col">Paciente</th>
+                    <th scope="col">Doctor/a Actual</th>
+                    <th scope="col">Proximo Turno</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="">1000</a></td>
+                    <td><a href="">Larry Diaz</a></td>
+                    <td><a href="">Maria Viale</a></td>
+                    <td>8/08/18</td>
+                </tr>
+                <tr>
+                    <td><a href="">1154</a></td>
+                    <td><a href="">Martina Chamello</a></td>
+                    <td><a href="">Gabriela Heredia</a></td>
+                    <td>11/08/18</td>
+                </tr>
+                <tr>
+                    <td><a href="">1155</a></td>
+                    <td><a href="">Martina Chamello</a></td>
+                    <td><a href="">Gabriela Heredia</a></td>
+                    <td>11/08/18</td>
+                </tr>
+                <tr>
+                    <td><a href="">1153</a></td>
+                    <td><a href="">Martina Chamello</a></td>
+                    <td><a href="">Maria Viale</a></td>
+                    <td>11/08/18</td>
+                </tr>
+            </tbody>
+        </table>    
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>   
+</body>
+</html>

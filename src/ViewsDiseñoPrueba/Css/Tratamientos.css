@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(43, 42, 42);
+    color: white;
+}
+/**********************
+NAV SECTION
+***********************/
+#dropdownmenu{
+    background-color: rgb(43, 42, 42);
+    color: white;
+}
+#navegacion{
+    font-family: 'Gabriela', serif;
+}
+/**********************
+TABLE SECTION
+***********************/
+#TABLA{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+a:link {color:rgb(255, 255, 255);} 
+a:visited {color:rgb(255, 255, 255);} 
+a:active {color:rgb(100, 247, 124);}
+a:hover {color:rgb(100, 247, 124);}
+/**********************
+SEARCH SECTION
+***********************/
+#busquedas{
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    margin-left: 660px;
+}

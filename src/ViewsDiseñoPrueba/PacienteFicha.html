@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paciente</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Gabriela" rel="stylesheet">
+    <link rel="stylesheet" href="Css/PacienteFicha.css">
+</head>
+<body>
+    <nav id="navegacion" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">COINTEGRAL</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#">Inicio</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Pacientes
+                </a>
+                <div id="dropdownmenu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Nuevo</a>
+                  <a class="dropdown-item" href="#">Pacientes</a>
+              </div>
+            </li>   
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Tratamientos
+                </a>
+                <div id="dropdownmenu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Nuevo</a>
+                  <a class="dropdown-item" href="#">Actuales</a>
+                  <a class="dropdown-item" href="#">Finalizados</a>
+              </div>
+            </li>   
+            <a class="nav-item nav-link" href="#">Turnos</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Datos Varios
+                </a>
+                <div id="dropdownmenu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Odontologos/as</a>
+                  <a class="dropdown-item" href="#">Obras Sociales</a>
+                  <a class="dropdown-item" href="#">Afecciones</a>
+              </div>
+            </li>
+            <a class="nav-item nav-link" href="#">Lista de Precios</a>   
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Sesion
+                </a>
+                <div id="dropdownmenu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Usuario</a>
+                  <a class="dropdown-item" href="#">Cambiar Usuario</a>
+                  <a class="dropdown-item" href="#">Cerrar Sistema</a>
+              </div>
+            </li>   
+        </div>
+      </div>
+    </nav>   
+     <!-- 
+        *** FICHA PERSONAL
+            -->  
+    <div class="row">     
+        <div class="col-sm-4">
+            <div id="DatosPaciente" class="card">
+                <h1 class="card-title text-center" id="NombrePaciente">Martina Chamello</h1>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                                    <div>
+                                        <div>
+                                            <strong>Dni </strong><p >31566623</p>
+                                            <strong>Telefono </strong><p >3534828898</p>
+                                            <strong>Email </strong><p>Martina_Chamello@gmail.com</p>
+                                            <strong>Domicilio </strong><p>Buenos Aires 124</p>
+                                            <strong>Fecha de Nacimiento </strong><p>11/04/97</p>                                            
+                                        </div>
+                                    </div>              
+                        </div>
+                        <div class="col-sm-4">
+                            <div>
+                                <div>
+                                    <strong>Obra Social </strong><p>Ospat</p>
+                                    <strong>NºAfiliado </strong><p>11222557401</p>                                        
+                                    <strong>Estado Civil </strong><p>Casada</p>
+                                    <strong>Fecha de Alta </strong><p>11/04/18</p>
+                                    <form class="form-inline">
+                                        <div class="form-group mb-2">
+                                            <a href=""><i class="fas fa-edit"></i></a>                                               
+                                        </div>
+                                        <div class="form-group mx-sm-3 mb-2">
+                                            <a href="" data-toggle="modal" data-target="#historiaclinica"><i class="fas fa-clipboard"></i></a>
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <a href="" data-toggle="modal" data-target="#historiaclinica"><i class="fas fa-tooth"></i></a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>                              
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    <!-- 
+        *** ODONTOGRAMA DIENTES ARRIBA
+            -->
+    <div class="col-sm-8">
+        <div class="row" id="odontograma-UWU">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body" id="Arriba">
+                        <div class="row ml-4 mt-1">
+                            <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/18.png" alt=""></a>
+                            <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/17.png" alt=""></a>  
+                            <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/16.png" alt=""></a>
+                            <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/15.png" alt=""></a>
+                            <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/14.png" alt=""></a>
+                            <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/13.png" alt=""></a>
+                            <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/12.png" alt=""></a>
+                            <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/11.png" alt=""></a>
+                        </div>
+                        <div class="row ml-4">
+                            <img class="ml-2" src="../public/images/odontograma/Rojos/Caries.png" alt=""> 
+                            <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                            <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                            <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                            <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                            <img class="ml-2" src="../public/images/odontograma/Rojos/Corona.png" alt="">
+                            <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                            <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                        </div>
+                        <div class="row ml-4 mt-1">
+                            <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/Rojos/OdontogramaRojo6.png" alt=""></a> 
+                            <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a> 
+                            <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a>  
+                            <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a> 
+                            <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a> 
+                            <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/Rojos/OdontogramaRojo9.png" alt=""></a> 
+                            <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a>
+                            <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body" id="Arriba">
+                        <div class="row ml-4 mt-1">
+                            <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/21.png" alt=""></a>
+                            <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/22.png" alt=""></a>
+                            <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/23.png" alt=""></a>
+                            <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/24.png" alt=""></a>
+                            <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/25.png" alt=""></a>
+                            <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/26.png" alt=""></a>
+                            <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/27.png" alt=""></a>
+                            <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/28.png" alt=""></a>
+                        </div>                        
+                        <div class="row ml-4">
+                            <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                            <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                            <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                            <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                            <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                            <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                            <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                            <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                        </div>
+                        <div class="row ml-4 mt-1">
+                            <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a> 
+                            <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a> 
+                            <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a>  
+                            <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a> 
+                            <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a>  
+                            <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a> 
+                            <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a>
+                            <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ <!-- 
+        *** ODONTOGRAMA DIENTES ABAJO
+            -->
+        <div class="col-sm-12">
+            <div class="row" id="odontograma-UWU">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body" id="Arriba">
+                            <div class="row ml-4 mt-1">
+                                <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/48.png" alt=""></a>
+                                <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/47.png" alt=""></a>
+                                <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/46.png" alt=""></a>
+                                <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/45.png" alt=""></a>
+                                <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/44.png" alt=""></a>
+                                <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/43.png" alt=""></a>
+                                <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/42.png" alt=""></a>
+                                <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/41.png" alt=""></a>
+                            </div>
+                            <div class="row ml-4">
+                                <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                                <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                                <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                                <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                                <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                                <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                                <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                                <img class="ml-2" src="../public/images/odontograma/normal.png" alt=""> 
+                            </div>
+                            <div class="row ml-4 mt-1">
+                                <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a> 
+                                <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a> 
+                                <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a>  
+                                <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a> 
+                                <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a>  
+                                <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a> 
+                                <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a>
+                                <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body" id="Arriba">
+                            <div class="row ml-4 mt-1">
+                                <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/31.png" alt=""></a>
+                                <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/32.png" alt=""></a>  
+                                <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/33.png" alt=""></a>
+                                <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/34.png" alt=""></a>
+                                <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/35.png" alt=""></a>
+                                <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/36.png" alt=""></a>
+                                <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/37.png" alt=""></a>
+                                <a href="" data-toggle="modal" data-target="#HISTORIALDIENTE"><img class="ml-2" src="../public/images/odontograma/Numeros/38.png" alt=""></a>
+                            </div>
+                            <div class="row ml-4">
+                                <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                                <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                                <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                                <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                                <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/Azul/Endodoncias.png" alt=""></a>  
+                                <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                                <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                                <img class="ml-2" src="../public/images/odontograma/normal.png" alt="">
+                            </div>
+                            <div class="row ml-4 mt-1">
+                                <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a> 
+                                <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a> 
+                                <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a>  
+                                <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a> 
+                                <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/Azul/OdontogramaAzul1.png" alt=""></a>  
+                                <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a> 
+                                <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a>
+                                <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="ml-2" src="../public/images/odontograma/normal.png" alt=""></a>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- <div class="col-sm-8"></div> -->
+    <!-- 
+        *** ODONTOGRAMA DIENTES LECHE ARRIBA
+            -->
+                
+    <!-- 
+        *** MODAL1
+                    --> 
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" id="MODAL1">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Situacion Actual</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action" id="MODAL1" data-toggle="modal" data-target=".bd-example-modal-lg"><img src="../public/images/odontograma/Rojos/Caries.png" alt=""> Lesion de Caries</a>
+                            <a href="#" class="list-group-item list-group-item-action" id="MODAL1" data-toggle="modal" data-target=".bd-example-modal-lg"><img src="../public/images/odontograma/Rojos/InfeccionPulpar.png" alt=""> Infeccion Pulpar</a>
+                            <a href="#" class="list-group-item list-group-item-action" id="MODAL1" data-toggle="modal" data-target=".bd-example-modal-lg"><img src="../public/images/odontograma/Rojos/Fracturas.png" alt=""> Fractura</a>
+                            <a href="#" class="list-group-item list-group-item-action" id="MODAL1" data-toggle="modal" data-target=".bd-example-modal-lg"><img src="../public/images/odontograma/Rojos/Extraccion.png" alt=""> Extraccion</a>
+                            <a href="#" class="list-group-item list-group-item-action" id="MODAL1" data-toggle="modal" data-target=".bd-example-modal-lg"><img src="../public/images/odontograma/Rojos/Ausente.png" alt=""> Ausente</a>
+                            <a href="#" class="list-group-item list-group-item-action" id="MODAL1" data-toggle="modal" data-target=".bd-example-modal-lg"><img src="../public/images/odontograma/Rojos/Restauracion.png" alt=""> Restauracion</a>
+                            <a href="#" class="list-group-item list-group-item-action" id="MODAL1" data-toggle="modal" data-target=".bd-example-modal-lg"><img src="../public/images/odontograma/Rojos/Endodoncias.png" alt=""> Endodoncia</a>
+                            <a href="#" class="list-group-item list-group-item-action" id="MODAL1" data-toggle="modal" data-target=".bd-example-modal-lg"><img src="../public/images/odontograma/Rojos/Corona.png" alt=""> Corona</a>
+                            <a href="#" class="list-group-item list-group-item-action" id="MODAL1" data-toggle="modal" data-target=".bd-example-modal-lg"><img src="../public/images/odontograma/Rojos/Implante.png" alt=""> Implante</a>
+                            <a href="#" class="list-group-item list-group-item-action" id="MODAL1" data-toggle="modal" data-target=".bd-example-modal-lg"><img src="../public/images/odontograma/Rojos/PernoMuñon.png" alt=""> Perno muñon</a>
+                            <a href="#" class="list-group-item list-group-item-action" id="MODAL1" data-toggle="modal" data-target=".bd-example-modal-lg"><img src="../public/images/odontograma/Rojos/Otro.png" alt=""> Otro</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 
+        *** MODAL2
+            -->  
+    <!-- Large modal -->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" id="MODAL2">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Caras</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">Pz. Completa </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2"> Mesial</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox3"> Distal</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox4"> Oclusal</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox5"> Palatina</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox6"> Lingual</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox7"> Vestibular</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <label for="Observaciones-name" class="col-form-label">Estado:</label>
+                    <input type="text" class="form-control" id="Observaciones-name">
+                    <button type="button" class="btn btn-primary">Listo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 
+        *** MODAL HISTORIA CLINICA
+            -->        
+      <!-- Modal -->
+      <div class="modal fade" id="historiaclinica" tabindex="-1" role="dialog" aria-labelledby="historiaclinicaLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content" id="MODAL2">
+            <div class="modal-header">
+              <h5 class="modal-title" id="historiaclinicaLabel">Historia Clinica</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+               <!-- Historia clinica --> 
+               <div class="card">
+                    <ul class="list-group">
+                      <li class="list-group-item" id="MODAL1"><strong>Medico de Cabecera: </strong> Dr. Francisco Echevarria</li>
+                      <li class="list-group-item" id="MODAL1"><strong>¿Servicio de Urgencia?: </strong> Si</li>
+                      <li class="list-group-item" id="MODAL1"><strong>¿Cual?: </strong> Emi</li>
+                      <li class="list-group-item" id="MODAL1"><strong>¿Hospitalizacion en los ultimos años?: </strong> No</li> 
+                      <li class="list-group-item" id="MODAL1"><strong>Razon de la hospitalizacion: </strong> </li> 
+                      <li class="list-group-item" id="MODAL1"><strong>¿Bajo Tratamiento medico por enfermedad?: </strong> Si</li> 
+                      <li class="list-group-item" id="MODAL1"><strong>Alergias: </strong> Mani - Tomates</li> 
+                      <li class="list-group-item" id="MODAL1"><strong>Afecciones: </strong> Problemas cardiacos - Diabetes</li> 
+                      <li class="list-group-item" id="MODAL1"><strong>Medicamentos: </strong> Metformina - Tiazolidinedionas </li> 
+                      <li class="list-group-item" id="MODAL1"><strong>¿Fuma?: </strong> No</li> 
+                      <li class="list-group-item" id="MODAL1"><strong>¿Cuanto?: </strong> </li>  
+                      <li class="list-group-item" id="MODAL1"><strong>¿Bebe?: </strong> Si</li>  
+                      <li class="list-group-item" id="MODAL1"><strong>¿Cuanto?: </strong> A medida</li>  
+                      <li class="list-group-item" id="MODAL1"><strong>¿Embarazada?: </strong> No</li>  
+                      <li class="list-group-item" id="MODAL1"><strong>Tiempo de Embarazo: </strong> </li>  
+                      <li class="list-group-item" id="MODAL1"><strong>¿Problemas Radiantes?: </strong> No</li>  
+                      <li class="list-group-item" id="MODAL1"><strong>Otros: </strong> </li> 
+                      <li class="list-group-item" id="MODAL1"><strong>Observaciones: </strong> El paciente se ah mostrado inquieto .</li> 
+                      <li class="list-group-item" id="MODAL1"><strong>¿Dificultad para hablar?: </strong> No</li> 
+                      <li class="list-group-item" id="MODAL1"><strong>¿Dificultad para Masticar?: </strong> No</li> 
+                      <li class="list-group-item" id="MODAL1"><strong>¿Dificultad para Abrir la Boca?: </strong> No</li> 
+                      <li class="list-group-item" id="MODAL1"><strong>¿Movilidad en los dientes: </strong> No</li> 
+                      <li class="list-group-item" id="MODAL1"><strong>¿Sangran las encias?: </strong> No</li> 
+                      <li class="list-group-item" id="MODAL1"><strong>¿Pus en la Boca?: </strong> No</li> 
+                      <li class="list-group-item" id="MODAL1"><strong>¿En donde hay Pus?: </strong> </li> 
+                      <li class="list-group-item" id="MODAL1"><strong>Estado de Higiene Bucal: </strong> Muy buena</li> 
+                      <li class="list-group-item" id="MODAL1"><strong>Estado de la Lengua: </strong> Muy buena</li> 
+                      <li class="list-group-item" id="MODAL1"><strong>Estado de los Carillos: </strong>  Muy buena</li> 
+                      <li class="list-group-item" id="MODAL1"><strong>¿Presenta Sarro?: </strong> No</li> 
+                      <li class="list-group-item" id="MODAL1"><strong>Estado de los Labios: </strong>  Muy buena</li> 
+                      <li class="list-group-item" id="MODAL1"><strong>Estado de el Piso De la Boca: </strong>  Muy buena</li> 
+                      <li class="list-group-item" id="MODAL1"><strong>Estado GfngivoPeropdontal: </strong> </li> 
+                      <li class="list-group-item" id="MODAL1"><strong>Cantidad de Dientes: </strong> 32</li> 
+                      <li class="list-group-item" id="MODAL1"><strong>Enfermedad Periodental: </strong> Ninguna</li>  
+                    </ul>
+                  </div>             
+               <!-- / Historia clinica --> 
+            </div>
+            <div class="modal-footer"> 
+              <button type="button" class="btn btn-primary"><i class="fas fa-edit"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- 
+        *** MODAL HISTORIAL POR DIENTE
+                    -->   
+      <div class="modal fade" id="HISTORIALDIENTE" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content" id="MODAL2">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">HISTORIAL DIENTE</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-bordered table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Caras</th>
+                            <th scope="col">Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>30/04/18</th>
+                            <td>Vestibular Mesial</td>
+                            <td>Infeccion pulpar</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+          </div>
+        </div>
+      </div>                                 
+    <!-- 
+        *** TABLA ODONTOGRAMA
+            -->  
+    <div class="col-sm-12">
+        <div class="row">
+            <div class="col-sm-7"> <!-- TABLA 1 -->
+                <div id="TABLA"> 
+                    <h1>A realizar</h1>
+                    <table class="table table-bordered table-dark text-center">
+                        <thead>
+                            <tr>
+                                <th scope="col">Fecha</th>
+                                <th scope="col">Pieza</th>
+                                <th scope="col">Caras</th>
+                                <th scope="col">Estado</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>30/07/18</td>
+                                <td>18</td>
+                                <td>Vestibular Mesial</td>
+                                <td>Caries</td>
+                                <td>
+                                <button type="button" class="btn btn-danger">Anular</button>
+                                <button type="button" class="btn btn-primary">Realizado</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>30/07/18</td>
+                                <td>13</td>
+                                <td>Vestibular Oclusal</td>
+                                <td>Corona</td>
+                                <td>
+                                <button type="button" class="btn btn-danger">Anular</button>
+                                <button type="button" class="btn btn-primary">Realizado</button>                              
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div> 
+            <div class="col-sm-5"> <!-- TABLA 2 -->
+                    <div id="TABLA2"> 
+                        <h1>Realizados</h1>
+                        <table class="table table-bordered table-dark text-center">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Fecha</th>
+                                    <th scope="col">Pieza</th>
+                                    <th scope="col">Caras</th>
+                                    <th scope="col">Estado</th>
+                                    <th scope="col">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>30/07/18</td>
+                                    <td>35</td>
+                                    <td>Lingual Mesial Distal Oclusal</td>
+                                    <td>Caries</td>
+                                    <td>
+                                    <button type="button" class="btn btn-success">Confirmar</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>                         
+        </div>
+    </div>
+
+            <!-- 
+                *** 
+                    -->                     
+            <!-- <footer id="footer">
+                <h1 class="sr-only">Footer section</h1>
+                  <div class="container">
+                      <div class="row">
+                        <div id="contenido-Footer" class="col-sm-6">
+                          <small class="copyright"> © <span id="year">2018</span> - <a href="http://www.graphberry.com">Francisco Perrotta</a> All Right Reserved</small>
+                        </div>
+                        <div class="col-sm-6">
+                          <ul class="social-list">
+                          </ul>
+                        </div>
+                      </div>
+                  </div>
+            </footer>   -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>   
+</body>
+</html>
