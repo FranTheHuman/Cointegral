@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Redirect, BrowserRouter, Switch   } from 'react-router-dom';
 /************************
 Importar administradores
 *************************/
@@ -51,7 +51,13 @@ FUNCION PARA VER QUE NAVEGACION RENDERIZAR
 IsAdmin(){
     if (this.state.User[0].Tipo  == 2) { return <Administrador2/> }
     else if (this.state.User[0].Tipo == 1) { return <Administrador1/> }
-    else { return console.log("HOLA x2");}
+    else { return ( console.log("NO ES ADMIN")
+    // <BrowserRouter> 
+    //   <Switch> 
+    //     <Redirect from="/" to="/login"/>
+    //   </Switch>
+    // </BrowserRouter> 
+    );}
 }
 /*********************************************
 RENDERIZAR DISEÑO

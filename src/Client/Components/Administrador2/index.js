@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import RenderDom from 'react-dom';
 /*******************
 Importar Componentes
 ********************/

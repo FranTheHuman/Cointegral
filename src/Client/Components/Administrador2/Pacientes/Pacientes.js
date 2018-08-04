@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-
+import BusqedaPaciente from './Busqueda/Busqueda';
+import TablaPacientes from './Tabla/Tabla';
 class Pacientes extends Component {
     render(){
         return(
             <div>
-                Pacientes
+                <BusqedaPaciente/>
+                <TablaPacientes/>
             </div>
         )
     }

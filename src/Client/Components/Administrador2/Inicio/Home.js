@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 
+import Mensaje from './Mensaje/Mensaje.js';
+import Turnos from './Turnos/Turnos';
 class Home extends Component {
     render(){
         return(
-            <h1>Home</h1>
+            <div>
+                <Mensaje />
+                <Turnos />
+            </div>
         )
     }
 }

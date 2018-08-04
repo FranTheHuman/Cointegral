@@ -6,6 +6,7 @@ Importar Componentes
 ********************/
 import Navegacion from './Navegacion/Navegacion'; 
 import Home from './Inicio/Home';
+import BajaPacientes from './BajaPacientes/BajaPaciente';
 /************************
 Aplicacion Administrador 1
 *************************/

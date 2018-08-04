@@ -5,6 +5,10 @@ body{
 #alerta{
     margin-top: 20px;
 }
+a:link {color:rgb(255, 255, 255);} 
+a:visited {color:rgb(255, 255, 255);} 
+a:active {color:rgb(100, 247, 124);}
+a:hover {color:rgb(100, 247, 124);}
 /**********************
 NAV SECTION
 ***********************/
@@ -16,16 +20,12 @@ NAV SECTION
     font-family: 'Gabriela', serif;
 }
 /**********************
-TABLE SECTION
+INICIO ADMIN 2 - TABLA
 ***********************/
-#tabla{
+#TABLAINICIO{
     text-align: center;
     margin-top: 20px;
 }
-a:link {color:rgb(255, 255, 255);} 
-a:visited {color:rgb(255, 255, 255);} 
-a:active {color:rgb(100, 247, 124);}
-a:hover {color:rgb(100, 247, 124);}
 /**********************
 FOOTER SECTION
 ***********************/
@@ -42,3 +42,187 @@ footer{
 #contenido-Footer{
     margin-top: 8px;
 }
+/**********************
+PACIENTES - SEARCH SECTION
+***********************/
+#BusquedaPacientes{
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    margin-left: 660px;
+}
+/**********************
+PACIENTES - TABLE SECTION
+***********************/
+#TablaPacientes{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+/**********************
+TURNOS - SELECCIONAR ESPECIALISTAS TURNOS
+***********************/
+#SeleccionarDoctor{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+#SeleccionarDoctor-Doctores{
+    background-color: rgb(43, 42, 42);
+    color: white;
+}
+/**********************
+TURNOS - MODAL SECTION
+***********************/
+#MODAL{
+    background-color: rgb(83, 82, 82);
+    color: white;
+}
+/**********************
+TURNOS - TABLA 
+***********************/
+#TABLA{
+    margin-top: 15px;
+}
+/**********************
+FALTA PACIENTES - FORM SECTION
+***********************/
+#FormularioPacientes{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+#TITULOFORMULARIO{
+    font-family: 'Gabriela', serif;
+}
+/**********************
+ALTA PACIENTES FORM SECTION - CHECKBOX
+***********************/
+#PusBool, #SarroBool{
+    margin-left: 170px;
+}
+#servUrgBool{
+    margin-left: 135px;
+} 
+#HospitBool{
+    margin-left: 25px;
+}
+#BajoTratEnfBool{
+    margin-left: 30px;
+}
+#fumaBool, #bebeBool{
+    margin-left: 230px;
+}
+#EmbarazadaBool{
+    margin-left: 195px;
+}
+#DifHablar{
+    margin-left: 120px;
+}
+#DifMast{
+    margin-left: 110px;
+}
+#MovDient{
+    margin-left: 108px;
+} 
+#DifAbrBoca{
+    margin-left: 80px;
+}
+#SangranEncias{
+    margin-left: 150px;
+}
+/**********************
+ODONTOLOGOS - MODAL SECTION
+***********************/
+#MODALODONTOLOGOS{
+    background-color: rgb(83, 82, 82);
+    color: white;
+} 
+/**********************
+ODONTOLOGOS - TABLE SECTION
+***********************/
+#TablaOdontologos{
+    text-align: center;
+    margin-top: 20px;
+}
+/**********************
+OBRAS SOCIALES - TABLE SECTION
+***********************/
+#TablaObrasSociales{ 
+    margin-top: 20px;
+}
+/**********************
+FICHA PACIENTE - MODAL SECTION
+***********************/
+#MODALFICHAPACIENTE{
+    background-color: rgb(83, 82, 82);
+    color: white;
+}
+/**********************
+FICHA PACIENTE - PATIENT SECTION
+***********************/
+#DatosPaciente{
+    background-color: rgb(83, 82, 82);
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px; 
+    display: inline-block;
+    margin-left: 40px;
+}
+#NombrePaciente{
+    font-family: 'Gabriela', serif;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 9px;
+}
+/**********************
+FICHA PACIENTE - TABLA SECTION
+***********************/
+#TABLA{
+    margin-top: 15px; 
+    margin-left: 20px;
+}
+#TABLA2{
+    margin-top: 15px; 
+    margin-right: 25px;
+}
+/**********************
+FICHA PACIENTE - ODONTOGRAMA SECTION
+***********************/
+#odontograma-UWU{
+    margin-top: 15px;
+    margin-left: -100px;
+    margin-right: 20px;
+    font-size: 25px; 
+}
+#odontograma-Leche{
+    margin-top: 15px;
+    margin-left: -100px;
+    margin-right: 20px;
+    font-size: 25px; 
+}
+#odontograma-Leche-abajo{
+    margin-top: 15px;
+    margin-left: -692px;
+    margin-right: 20px; 
+}
+#Arriba{
+    background-color: rgb(83, 82, 82);
+}
+#Abajo{
+    background-color: rgb(83, 82, 82);
+    
+}
+#hola{
+    margin-left: 185px;
+}
+.container {
+    max-width: 900px;
+}
+
+
+
+
+
+
+
+
+
