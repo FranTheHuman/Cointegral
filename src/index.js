@@ -49,6 +49,9 @@ mongoose.connect(DB,{ useNewUrlParser: true }, (err, res) => {
     if(err) { throw err; console.log('Error on Database connection,' + err)}
     console.log('Database Connected')
         // Server
-    app.listen(port, ()=>{console.log(`Server listen on port ${port}`)});
+    app.listen(port, ()=>{console.log(`
+        # Server listen on port ${port}
+        # http://localhost:${port}/    
+    `)});
 })
 

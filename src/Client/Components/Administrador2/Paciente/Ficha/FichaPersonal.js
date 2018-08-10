@@ -28,7 +28,7 @@ class FICHAPERSONAL extends Component {
                                         <strong>Fecha de Alta </strong><p>11/04/18</p>
                                         <form className="form-inline">
                                             <div className="form-group mb-2">
-                                                <a href="" data-toggle="modal" data-target="#MODALHISTORIACLINICA"><i className="fas fa-edit"></i></a>                                               
+                                                <a href="/EditPaciente"><i className="fas fa-edit"></i></a>                                               
                                             </div>
                                             <div className="form-group mx-sm-3 mb-2">
                                                 <a href="" data-toggle="modal" data-target="#MODALHISTORIACLINICA"><i className="fas fa-clipboard"></i></a>

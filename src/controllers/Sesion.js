@@ -32,9 +32,9 @@ const getsignup = (req, res) => {
     })
 }
 
-/*********************************************************
-PARA DARLE ACCESO AL SISTEMA - METODO POST 
-**********************************************************/
+/*************************************************************************************************
+PARA ENVIARLO AL SISTEMA SI EL INICIO DE SESION ES XITOSO O DE VUELTA AL LOGIN SI NO - METODO POST 
+**************************************************************************************************/
 
 const postlogin = {
     successRedirect: '/Home',
@@ -84,7 +84,6 @@ const getprofile = async (req, res) => {
 /*******************************
 PARA EXPORTAR LAS FUNCIONES 
 *********************************/
-
 module.exports = {
     logout,
     SamePassword,

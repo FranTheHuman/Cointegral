@@ -9,6 +9,7 @@ import Home from './Inicio/Home';
 import ObrasSociales from './ObrasSociales/ObrasSociales';
 import Odontologos from './Odontologos/Odontologos';
 import Paciente from './Paciente/Paciente';
+import EditPaciente from './Editar Pacientes/Edit';
 import Pacientes from './Pacientes/Pacientes';
 import Turnos from './Turnos/Turnos';
 /************************
@@ -18,17 +19,7 @@ class Administrador2 extends Component {
     constructor(){
       super();
       this.state = {   
-          User: [
-            {
-              "Tipo": 0,
-              "_id": "",
-              "create_at": "",
-              "last_login": "",
-              "username": "",
-              "password": "",
-              "__v": 0
-            }
-        ]
+          User: [{}]
       };
       this.IsAdminNav = this.IsAdminNav.bind(this);
     }
@@ -71,6 +62,7 @@ render() {
             <Route path="/NuevoPaciente" component={AltaPacientes} exact/>
             <Route path="/Pacientes" component={Pacientes} exact/>
             <Route path="/Paciente" component={Paciente} exact/>
+            <Route path="/EditPaciente" component={EditPaciente} exact/>
             <Route path="/Turnos" component={Turnos} exact/>
             <Route path="/Odontologos" component={Odontologos} exact/>
             <Route path="/ObrasSociales" component={ObrasSociales} exact/> 

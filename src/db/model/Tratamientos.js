@@ -13,8 +13,6 @@ const TratamientoSchema = new Schema({
 
 module.exports = mongoose.model('Tratamiento', TratamientoSchema)
 
-
-
 /* 
     Consultas ( No en Odontograma )
     Limpieza 
