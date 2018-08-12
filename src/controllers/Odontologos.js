@@ -9,7 +9,7 @@ const Odontologo = require('../db/model/Odontologos');
 
 const AllOdontologos = async (req, res) => {
 
-    const Respuesta = await Odontologo.find(); // Averiguar como obtener las obras sociales como objeto y no el id 
+    const Respuesta = await Odontologo.find();
     console.log(Respuesta);
     res.json(Respuesta); 
 

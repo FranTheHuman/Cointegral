@@ -3,21 +3,25 @@
  ****************************************/
 
  /*************************************************
- TRAEMOS EL SCHEMA DE TURNOS DE LA CARPETA DB
+ TRAEMOS EL SCHEMA DE TURNOS Y PACIENTES DE LA CARPETA DB
  *************************************************/
  const Turnos = require('../db/model/Turnos');
-
- const AllTurnos = async (req, res) => {
-
-    const turnos = await Turnos.find();
-    console.log(turnos);
-    res.json(turnos); 
-
+ const Pacientes = require('../db/model/Pacientes');
+ const Odontologo = require('../db/model/Odontologos');
+const AllTurnos = async (req, res) => {
+    Turnos.find({}, function(err, turno) {
+        Pacientes.populate(turno, {path: "Paciente"}, function(err, turno){
+            Odontologo.populate(turno, {path: "Especialista"}, function(err, turno){
+                console.log(turno);
+                res.json(turno);
+            })
+        })
+    }); 
  }
 
  const AddTurnos = async (req, res) => {
 
-     const NuevoTurno = { Paciente: req.body.Paciente, FechaTurno: req.body.FechaTurno}; 
+     const NuevoTurno = req.body; 
      const NewTurno = new Turnos(NuevoTurno);
      await NewTurno.save();
      console.log(NewTurno);
@@ -33,9 +37,31 @@ const DeleteTurnos = async (req, res) => {
 
 };
 
-const EditTurnos = async (req, res) => {
+ /*************************************************
+FUNCION PARA CONFIRMAR EL TURNO - PUT
+ *************************************************/
+const confirmarTurno = async (req, res) => {
 
-    const TurnoEditado = req.body;
+    TurnoEditado = { "Asistio": "true"}
+    const id = req.params.id;
+    await Turnos.findByIdAndUpdate(id, TurnoEditado);
+    res.json({status: 'Turno Updated'});
+
+};
+ /*************************************************
+FUNCIONES PARA UNA AUSENCIA EN EL TURNO - PUT
+ *************************************************/
+const AusenciaNoAnunciadaTurno = async (req, res) => {
+
+    TurnoEditado = { "AusenciaAnunciada": "false", "Asistio": "false"}
+    const id = req.params.id;
+    await Turnos.findByIdAndUpdate(id, TurnoEditado);
+    res.json({status: 'Turno Updated'});
+
+};
+const AusenciaAnunciadaTurno = async (req, res) => {
+
+    TurnoEditado = { "AusenciaAnunciada": "true", "Asistio": "false"}
     const id = req.params.id;
     await Turnos.findByIdAndUpdate(id, TurnoEditado);
     res.json({status: 'Turno Updated'});
@@ -43,8 +69,10 @@ const EditTurnos = async (req, res) => {
 };
 
 module.exports = {
-    EditTurnos,
+    AusenciaNoAnunciadaTurno,
     DeleteTurnos,
     AddTurnos,
-    AllTurnos
+    AllTurnos,
+    confirmarTurno,
+    AusenciaAnunciadaTurno
 }

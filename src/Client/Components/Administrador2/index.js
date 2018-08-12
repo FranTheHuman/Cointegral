@@ -32,8 +32,7 @@ fetchUser() {
         .then(data => { 
             this.setState({
               User: data
-            });
-            console.log(this.state.User[0].Tipo)
+            }); 
         } );
 }
 /****************************************

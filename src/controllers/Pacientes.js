@@ -9,7 +9,7 @@ const Paciente = require('../db/model/Pacientes');
 
 const AllPacientes = async (req, res) => {
 
-    const Respuesta = await Paciente.find(); // Averiguar como obtener las obras sociales y tratamientos como objetos y no el id 
+    const Respuesta = await Paciente.find();
     console.log(Respuesta);
     res.json(Respuesta); 
 

@@ -1,23 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Especialistas extends Component {
-    render() {
-        return(
+const Especialistas = (props) => (
         <div className="dropdown" id="SeleccionarDoctor">
             <button className="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                 Especialista
             </button>
             <div className="dropdown-menu" aria-labelledby="dropdownMenuButton" id="SeleccionarDoctor-Doctores">
-                <a className="dropdown-item" href="#">Maria Viale</a>
-                <a className="dropdown-item" href="#">Gabriela Heredia</a>
-                <a className="dropdown-item" href="#">Liliana Romano</a>
-                <a className="dropdown-item" href="#">Gimena Gomez</a>
-                <a className="dropdown-item" href="#">Julieta Mora</a>
-                <a className="dropdown-item" href="#">Rodrigo Ferraro</a>
+                {
+                    props.Odontologo.map(odontologo => {
+                        return (
+                            <a key={odontologo._id} className="dropdown-item" href="#">{`${odontologo.Nombre} ${odontologo.Apellido}`}</a>
+                        )
+                    })                     
+                }
             </div>
         </div> 
-        )
-    }
-}
-
+)
 export default Especialistas;

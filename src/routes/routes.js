@@ -40,6 +40,8 @@ module.exports = (app, passport) => {
         app.get('/api/Turnos', Turnos.AllTurnos);
         app.post('/api/Turnos', Turnos.AddTurnos); 
         app.delete('/api/Turnos/:id', Turnos.DeleteTurnos); 
-        app.put('/api/Turnos/:id', Turnos.EditTurnos); 
+        app.put('/api/TurnosConfirmar/:id', Turnos.confirmarTurno); 
+        app.put('/api/TurnosAusenciaNoAnunciada/:id', Turnos.AusenciaNoAnunciadaTurno); 
+        app.put('/api/TurnosAusenciaAnunciada/:id', Turnos.AusenciaAnunciadaTurno); 
 } 
           

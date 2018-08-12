@@ -12,12 +12,19 @@
 - Pausa para Diseñar paginaCurriculumn
 
 - Aprender mas de la navegacion.
-- Estructurar aplicacion de cliente (Administrador1)
+- Estructurar aplicacion de cliente (Administrador1).
 - Aplicacion Cliente con datos dinamicos para administrador1.
 - Crear las rutas privadas y concentrarce en las sesiones. 
-- Dividir aun mas los componentes para aprender mas de configuracion de webpack.(Opcional) 
+- Dividir aun mas los componentes para aprender mas de configuracion de webpack. 
 - Aprender a hacer reportes en mongoDB.
-- Aprender a imprimir inrformacion. 
+- Aprender a imprimir inrformacion.
+
+- Pausa para organizar la PS.
+
 - Aprender a utilizar cache.
-- Aprender a hacer test con nodeJs
+- Aprender a hacer test con nodeJs.
 - Minificar todo. 
+- Aprender a implementar MySql en este proyecto
+- Aprender a implementar seguridad de Mysql en el proyecto.
+- Aprender a implementar GrapHQL en este proyecto
+
