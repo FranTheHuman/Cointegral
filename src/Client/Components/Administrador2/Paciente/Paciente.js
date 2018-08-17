@@ -47,10 +47,11 @@ class Paciente extends Component {
             .catch(err => console.log(err));
     }
     // EDITAR ODONTOGRAMA
-    EditOdontograma = () => {
-        this.setState(
-                this.state.Paciente[0].Odontograma, { [this.state.PiezaSeleccionada]: {$push: this.state.Nuevo} }
-        ),  
+    EditOdontograma = (e) => {
+        let PacienteCopy = Object.assign({}, this.state.Paciente);     
+        PacienteCopy[0].Odontograma[this.state.PiezaSeleccionada].push(this.state.Nuevo);                        
+        this.setState({Paciente:PacienteCopy});
+        console.log(this.state.Paciente)
         fetch(`/api/Paciente/${this.props.match.params.id}`, {
                 method: 'PUT',
                 body: JSON.stringify(this.state.Paciente[0]),
@@ -60,7 +61,9 @@ class Paciente extends Component {
                 }
             })
                 .then(res => res.json())
-                .catch(err => { console.log(err); });        
+                .catch(err => { console.log(err); });
+        e.preventDefault();
+                
     }
     // ACTUALIZAR STATE DE LAS CARAS DE NUEVO(State)
     handleChangeNuevoCaras = (e) => { 
@@ -86,7 +89,7 @@ class Paciente extends Component {
     handleChangeNuevo = (e) => { 
         const  { value }  = e.target;  
             let NuevoCopy = Object.assign({}, this.state.Nuevo);     
-            NuevoCopy[Observaciones] = value;                         
+            NuevoCopy.Observaciones = value;                         
             this.setState({Nuevo:NuevoCopy});
 
             console.log(`${value}  // ${this.state.Nuevo[Observaciones]}`);       
@@ -120,7 +123,7 @@ class Paciente extends Component {
     // SELECCIONAR UN TRATAMIENTO Y ACTUALIZAR STATE
     handleChangeTratamientos = (Tratamiento) => { 
         let NuevoCopy = Object.assign({}, this.state.Nuevo);     
-        NuevoCopy[Tratamiento] = Tratamiento;                         
+        NuevoCopy.Tratamiento = Tratamiento;                         
         this.setState({Nuevo:NuevoCopy});
     }
     render(){
