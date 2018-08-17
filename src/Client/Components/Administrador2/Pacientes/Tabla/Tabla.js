@@ -17,8 +17,8 @@ const  TablaPacientes = (props) => (
                             props.Paciente.map((paciente, i) => {
                                 return (
                                     <tr key={paciente._id}> 
-                                        <td>{i+1}</td>
-                                        <td>{`${paciente.Personal.Nombre} ${paciente.Personal.Apellido}`}</td>
+                                        <td>{i+1}</td> 
+                                        <td><a href={`/Paciente/${paciente._id}`}>{`${paciente.Personal.Nombre} ${paciente.Personal.Apellido}`}</a></td>
                                         <td>{paciente.Personal.Documento}</td>
                                         {
                                         props.ObraSocial.map(obrasocial => {

@@ -53,7 +53,7 @@ class TablaTurnos extends Component {
                             <td className="bg-success"><a href="" data-toggle="modal" data-target="#exampleModalTurnos"><i className="fas fa-plus-circle"></i></a></td>
                         </tr>
                         <tr>
-                            <th scope="row">9:00</th>
+                            <th scope="row">9:00</th> 
                             <td><a href="" style={TurnosOcupados}>Antonella Monesterolo</a></td>
                             <td><a href="" style={TurnosOcupados}>Martina Chamello</a></td>
                             <td className="bg-success"><a href="" data-toggle="modal" data-target="#exampleModalTurnos"><i className="fas fa-plus-circle"></i></a></td>

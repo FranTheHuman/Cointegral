@@ -10,7 +10,7 @@ class Pacientes extends Component {
             ObraSocial: [],
             Nombre: '',
             Dni: '',
-            Apellido: '',           
+            Apellido: ''
         }; 
         this.fetchPacientes = this.fetchPacientes.bind(this);  
         this.fetchObraSociales = this.fetchObraSociales.bind(this);  

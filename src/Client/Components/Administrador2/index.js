@@ -55,13 +55,13 @@ render() {
     return (
       <BrowserRouter>
         <div> 
-          <Navegacion/>   
+          <Navegacion SetIdPaciente={this.state.SetIdPaciente}/>   
           <Switch>   
-            <Route path="/Home" component={Home} exact/>
+            <Route path="/Home" component={Home} exact />
             <Route path="/NuevoPaciente" component={AltaPacientes} exact/>
             <Route path="/Pacientes" component={Pacientes} exact/>
-            <Route path="/Paciente" component={Paciente} exact/>
-            <Route path="/EditPaciente" component={EditPaciente} exact/>
+            <Route path="/Paciente/:id" component={Paciente} exact strict/>
+            <Route path="/EditPaciente/:id" component={EditPaciente} exact/>
             <Route path="/Turnos" component={Turnos} exact/>
             <Route path="/Odontologos" component={Odontologos} exact/>
             <Route path="/ObrasSociales" component={ObrasSociales} exact/> 

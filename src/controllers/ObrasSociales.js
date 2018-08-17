@@ -18,6 +18,17 @@ const AllObrasSociales = async (req, res) => {
 
 }
 /*************************************************
+FUNCION PARA OBTENER UNA OBRA SOCIAL - GET
+*************************************************/
+const OneObrasSocial = async (req, res) => {
+
+    const id = req.params.id 
+    const Respuesta = await ObraSociales.find({"_id":id});
+    console.log(Respuesta);
+    res.json(Respuesta); 
+
+}
+/*************************************************
 FUNCION PARA AGREGAR UNA OBRA SOCIAL - POST
 *************************************************/
 const AddObraSocial = async (req, res) => {
@@ -45,5 +56,6 @@ EXPORTAMOS LAS FUNCIONES PARA PODER UTILIZARLAS EN LAS RUTAS
 module.exports = {
     AllObrasSociales,
     AddObraSocial,
-    DelteObraSocial
+    DelteObraSocial,
+    OneObrasSocial
 }

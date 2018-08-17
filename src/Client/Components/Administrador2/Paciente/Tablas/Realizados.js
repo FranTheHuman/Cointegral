@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 class REALIZADOS extends Component {
     render(){
         return(
-            <div class="col-sm-5"> 
+            <div className="col-sm-5"> 
                 <div id="TABLA2"> 
                     <h1>Realizados</h1>
-                    <table class="table table-bordered table-dark text-center">
+                    <table className="table table-bordered table-dark text-center">
                         <thead>
                             <tr>
                                 <th scope="col">Fecha</th>
@@ -23,7 +23,7 @@ class REALIZADOS extends Component {
                                 <td>Lingual Mesial Distal Oclusal</td>
                                 <td>Caries</td>
                                 <td>
-                                <button type="button" class="btn btn-success">Confirmar</button>
+                                <button type="button" className="btn btn-success">Confirmar</button>
                                 </td>
                             </tr>
                         </tbody>

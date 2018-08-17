@@ -5,6 +5,7 @@
   "author": "Francisco Perrotta <Lautaro_p14@hotmail.com>",
   "license": "MIT",
   "dependencies": {
+    "babel-preset-stage-2": "^6.24.1",
     "bcrypt-nodejs": "^0.0.3",
     "body-parser": "^1.18.3",
     "connect-flash": "^0.1.1",
@@ -12,6 +13,7 @@
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "express-session": "^1.15.6",
+    "immutability-helper": "^2.7.1",
     "mongoose": "^5.2.5",
     "morgan": "^1.9.0",
     "passport": "^0.4.0",
@@ -30,7 +32,7 @@
     "react-dom": "^16.4.1",
     "react-router-dom": "^4.3.1",
     "style-loader": "^0.21.0",
-    "webpack": "^4.16.2", 
+    "webpack": "^4.16.2",
     "webpack-cli": "^3.1.0"
   },
   "scripts": {

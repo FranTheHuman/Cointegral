@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class ModalHistorialDiente extends Component {
     render() {
         return(
-            <div className="modal fade" id="HISTORIALDIENTE" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal fade" id="HISTORIALDIENTE" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog" role="document">
                     <div className="modal-content" id="MODALFICHAPACIENTE">
                         <div className="modal-header">

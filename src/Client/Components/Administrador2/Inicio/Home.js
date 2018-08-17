@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import Mensaje from './Mensaje/Mensaje.js';
 import Turnos from './Turnos/Turnos';
 class Home extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             Turnos: [],
             Pacientes: []       
@@ -21,14 +21,14 @@ class Home extends Component {
             } );
     } 
     editTurnos(id) {
-        fetch(`/api/TurnosConfirmar/${id}`, {
-                method: 'PUT',
-                headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-                }  
-            })
-        .then(this.fetchTurnos())
+        // fetch(`/api/TurnosConfirmar/${id}`, {
+        //         method: 'PUT',
+        //         headers: {
+        //         'Accept': 'application/json',
+        //         'Content-Type': 'application/json'
+        //         }  
+        //     })
+        // .then(this.fetchTurnos())
     }
     TipoMensaje(){
         let contador = 0;
@@ -52,7 +52,7 @@ class Home extends Component {
         return(
             <div>
                 <Mensaje TipoMensaje={this.TipoMensaje}/>
-                <Turnos Turnos={this.state.Turnos} editTurnos={this.editTurnos}/>
+                <Turnos Turnos={this.state.Turnos} editTurnos={this.editTurnos} SetIdPaciente={this.props.SetIdPaciente}/>
             </div>
         )
     }

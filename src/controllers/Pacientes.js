@@ -15,6 +15,15 @@ const AllPacientes = async (req, res) => {
 
 };
 
+const OnePaciente = async (req, res) => {
+
+    const id = req.params.id 
+    const Respuesta = await Paciente.find({"_id":id});
+    console.log(Respuesta);
+    res.json(Respuesta); 
+
+};
+
 const AddPaciente = async (req, res) => {
 
     const NuevoPaciente = req.body; 
@@ -57,7 +66,8 @@ module.exports = {
     AllPacientes,
     DeletePaciente,
     EditPaciente,
-    PacientePorNombre
+    PacientePorNombre,
+    OnePaciente
 }
 
 

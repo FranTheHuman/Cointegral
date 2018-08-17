@@ -18,6 +18,7 @@ module.exports = (app, passport) => {
         app.get('/api/user', User.getprofile);
         // Pacientes:
         app.get('/api/Pacientes', Pacientes.AllPacientes);
+        app.get('/api/Paciente/:id', Pacientes.OnePaciente);
         app.post('/api/Paciente', Pacientes.AddPaciente); 
         app.put('/api/Paciente/:id', Pacientes.EditPaciente);
         app.delete('/api/Paciente/:id', Pacientes.DeletePaciente);   
@@ -29,6 +30,7 @@ module.exports = (app, passport) => {
         app.delete('/api/Odontologos/:id', Odontologos.DeleteOdontologo);  
         // Obra Social:
         app.get('/api/ObraSocial', ObraSociales.AllObrasSociales);
+        app.get('/api/ObraSocial/:id', ObraSociales.OneObrasSocial);
         app.post('/api/ObraSocial', ObraSociales.AddObraSocial); 
         app.delete('/api/ObraSocial/:id', ObraSociales.DelteObraSocial); 
         // Tratamientos:  

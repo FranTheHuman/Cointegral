@@ -92,6 +92,8 @@ FALTA PACIENTES - FORM SECTION
 }
 #TITULOFORMULARIO{
     font-family: 'Gabriela', serif;
+    text-align: center;
+    font-size: 200%;
 }
 /**********************
 ALTA PACIENTES FORM SECTION - CHECKBOX
@@ -128,6 +130,9 @@ ALTA PACIENTES FORM SECTION - CHECKBOX
 }
 #SangranEncias{
     margin-left: 150px;
+}
+#ProblemaRadiante{
+    margin-left: 130px;
 }
 /**********************
 ODONTOLOGOS - MODAL SECTION
