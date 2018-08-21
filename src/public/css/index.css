@@ -223,11 +223,131 @@ FICHA PACIENTE - ODONTOGRAMA SECTION
     max-width: 900px;
 }
 
+/**********************
+Responsive
+***********************/
+@media screen and (max-width: 500px) {
+   #LISTO {
+       margin-bottom: 15px;
+   }
+   #PusBool, #SarroBool{
+       margin-left: 100px;
+   }
+   #servUrgBool{
+       margin-left: 50px;
+   }
+   #HospitBool{
+       margin-left: 90px;
+   }
+   #BajoTratEnfBool{
+       margin-left: 20px;
+   }
+   #fumaBool, #bebeBool{
+       margin-left: 0px;
+   }
+   #EmbarazadaBool{
+       margin-left: 0px;
+   }
+   #DifHablar{
+       margin-left: 0px;
+   }
+   #DifMast{
+       margin-left: 0px;
+   }
+   #MovDient{
+       margin-left: 0px;
+   }
+   #DifAbrBoca{
+       margin-left: 0px;
+   }
+   #SangranEncias{
+       margin-left: 0px;
+   }
+   /**********************
+   FORM SECTION
+   ***********************/
+   #Formulario{
+       margin-left: 15px;
+       margin-right: 15px;
+       margin-top: 15px;
+   }
+   #TITULO{
+       font-family: 'Gabriela', serif;
+   }
+}
 
 
+@media screen and (max-width: 1500px) {
+   #LISTO {
+       margin-bottom: 15px;
+   }
+   #PusBool, #SarroBool{
+       margin-left: 100px;
+   }
+   #servUrgBool{
+       margin-left: 50px;
+   }
+   #HospitBool{
+       margin-left: 90px;
+   }
+   #BajoTratEnfBool{
+       margin-left: 20px;
+   }
+   #fumaBool, #bebeBool{
+       margin-left: 150px;
+   }
+   #EmbarazadaBool{
+       margin-left: 95px;
+   }
+   #DifHablar{
+       margin-left: 35px;
+   }
+   #DifMast{
+       margin-left: 20px;
+   }
+   #MovDient{
+       margin-left: 19px;
+   }
+   #DifAbrBoca{
+       margin-left: 8px;
+   }
+   #SangranEncias{
+       margin-left: 55px;
+   }
+}
+@media screen and (max-width: 1500px) {
+   #odontograma-UWU{
+       margin-top: 15px;
+       margin-left: 0px;
+       margin-right: 20px;
+       font-size: 25px;
+   }
+}
 
-
-
+@media screen and (max-width: 500px) {
+   body{
+       text-align: center;
+   }
+   #odontograma-UWU{
+       margin-top: 15px;
+       margin-left: 0px;
+       margin-right: 0px;
+       font-size: 25px;
+   }
+   #odontograma-OWO{
+       margin-top: 15px;
+       margin-left: 0px;
+       margin-right: 0px;
+       font-size: 25px; 
+   }
+}
+@media screen and (max-width: 1500px) {
+   #busquedas{
+       margin-top: 20px;
+       margin-bottom: 0px;
+       margin-left: 200px;
+   }
+}
 
 
 

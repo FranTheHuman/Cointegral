@@ -51,6 +51,26 @@ const EditPaciente = async (req, res) => {
 
 };
 
+const ConfirmOdontograma = async (req, res) => {
+    db.bar.update( {user_id : 123456 , "items.item_name" : "my_item_two" } , 
+    {$inc : {"items.$.price" : 1} } , 
+    false , 
+    true);
+    const id = req.params.id;
+    await Paciente.update (id, PacienteEditado);
+    res.json({status: 'Paciente Updated'});
+
+};
+
+const RealizadoOdontograma = async (req, res) => {
+
+    const PacienteEditado = req.body;
+    const id = req.params.id;
+    await Paciente.findByIdAndUpdate(id, PacienteEditado);
+    res.json({status: 'Paciente Updated'});
+
+};
+
 // Buscar Paciente Por Nombre
 const PacientePorNombre = async (req, res) => {
 
