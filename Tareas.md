@@ -19,14 +19,14 @@
 - Aprender a hacer reportes en mongoDB.
 - Aprender a imprimir inrformacion.
 
-- Pausa para organizar el objetivo, funciones y limites de la PS.
+- Pausa para organizar el objetivo, funciones y limites de la PS. (REACT, REDUX, MONGODB, GRAPHQL, NODEJS)
 
 - Aprender a utilizar cache.
 - Aprender a optimizar la pagina. (lazy loading , un ejemplo)
 - Aprender a hacer test con nodeJs.
 - Minificar todo. 
 
-- Determinar la info a buscar para defender el codigo --> (Babel, react, MVC, git, package.json, npm/yarn, webpack, mongodb, passport, modulos, javascript modular, componentes, nodeJs, express, HTTP, Apis, Promesas, ASync Await)
+- Determinar la info a buscar para defender el codigo --> (Babel, react, redux, MVC, git, package.json, npm/yarn, webpack, mongodb, passport, modulos, javascript modular, componentes, nodeJs, express, HTTP, Apis, Promesas, ASync Await)
 
 - Aprender a implementar MySql en este proyecto
 - Aprender a implementar seguridad de Mysql en el proyecto.

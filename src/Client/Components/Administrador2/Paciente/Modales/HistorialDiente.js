@@ -1,8 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class ModalHistorialDiente extends Component {
-    render() {
-        return(
+const ModalHistorialDiente = (props) => (
             <div className="modal fade" id="HISTORIALDIENTE" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog" role="document">
                     <div className="modal-content" id="MODALFICHAPACIENTE">
@@ -18,15 +16,24 @@ class ModalHistorialDiente extends Component {
                                     <tr>
                                         <th scope="col">Fecha</th>
                                         <th scope="col">Caras</th>
-                                        <th scope="col">Estado</th>
+                                        <th scope="col">Tratamiento</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <th>30/04/18</th>
-                                        <td>Vestibular Mesial</td>
-                                        <td>Infeccion pulpar</td>
-                                    </tr>
+                                    {
+                                        props.PiezaSeleccionada == "" ? null : 
+                                        props.Paciente.Odontograma[props.PiezaSeleccionada].map(p => {
+                                            if(p.Estado.Confirmado == true){
+                                                return (
+                                                    <tr key={p._id}>
+                                                        <td>{p.Fecha.substring(0, 10)}</td> 
+                                                        <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
+                                                        {props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(<td key={t._id}>{t.Nombre}</td>)}})} 
+                                                    </tr>
+                                                )
+                                            }
+                                        })                                    
+                                    }
                                 </tbody>
                             </table>
                         </div>
@@ -34,7 +41,5 @@ class ModalHistorialDiente extends Component {
                 </div>
             </div>  
         )
-    }
-}
 
 export default ModalHistorialDiente;

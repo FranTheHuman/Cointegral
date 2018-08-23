@@ -19,25 +19,24 @@ class Paciente extends Component {
                     HistoriaClinica: { MedicoCabecera: "", ServUrgenciaBool: false, ServUrgen: "", HospitalizacionBool: false, HospitalizacionRazon: "", TratamientoMedicoBool: false, TratamientoMedicoRazon: "", Alergias: "", Afecciones: "", Medicamentos: "", FumaBool: false, FumaCuanto: 0, BebeBool: false, BebeCuanto: 0, EmbarazadaBool:  false, EmbarazadaTiempo: 0, ProblemaRadiante: false, Otros: "", Observaciones: "", DificultadHablar: false, DificultadMasticar: false, DificultadAbrirBoca: false, MovilidadEnDientes: false, EnciasSangrantes: false, PusBoca: false, PusDonde: "", EstadoHigieneBucal: "", 
                                EstadoDeTejidosBlandos: { Lengua: "", Carillos: "", PresentaSarro: false, Labios: "", PisoDeBoca: "", EstadoGfngivoPeropdontal: "", CantidadDientes: "", EnfermedadPeriodental: ""}},
                     Odontograma: { 
-                                   Pieza11: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ], Pieza12: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ],
-                                   Pieza13: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ], Pieza14: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ], Pieza15: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ],
-                                   Pieza16: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ], Pieza17: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ], Pieza18: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ],
-                                   Pieza21: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ], Pieza22: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ], Pieza23: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ],
-                                   Pieza24: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ], Pieza25: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ], Pieza26: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ],
-                                   Pieza27: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ], Pieza28: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ], Pieza31: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ],
-                                   Pieza32: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ], Pieza33: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ], Pieza34: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ],
-                                   Pieza35: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ], Pieza36: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ], Pieza37: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ],
-                                   Pieza38: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ], Pieza41: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ], Pieza42: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ],
-                                   Pieza43: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ], Pieza44: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ], Pieza45: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ],
-                                   Pieza46: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ], Pieza47: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ], Pieza48: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "", Tratamiento: "", Observaciones: "" } ],
+                                   Pieza11: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza12: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
+                                   Pieza13: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza14: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza15: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
+                                   Pieza16: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza17: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza18: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
+                                   Pieza21: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza22: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza23: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
+                                   Pieza24: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza25: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza26: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
+                                   Pieza27: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza28: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza31: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
+                                   Pieza32: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza33: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza34: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
+                                   Pieza35: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza36: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza37: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
+                                   Pieza38: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza41: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza42: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
+                                   Pieza43: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza44: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza45: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
+                                   Pieza46: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza47: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza48: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
                                 }
                 }
             ],
             ObraSocial: [{Nombre: ""}],
             Tratamientos: [ {_id: "", Nombre: "",} ],
             PiezaSeleccionada: "",
-            Nuevo: { Fecha: new Date(), Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: "A realizar", Tratamiento: "", Observaciones: "" },
-            ParaConsultarHistorialDiente: "",
+            Nuevo: { Fecha: new Date(), Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: true, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" },
             ErrorVarialbe: null
         }; 
     }
@@ -52,7 +51,7 @@ class Paciente extends Component {
     EditOdontograma = (e) => {
         let contador = 0;
         this.state.Paciente[0].Odontograma[this.state.PiezaSeleccionada].map(t => { // recorre la pieza seleccionada
-            if (t.Estado != "Confirmado") { // Si encuentra un tratamiento no confirmado  
+            if (t.Estado.Confirmado != true) { // Si encuentra un tratamiento no confirmado  
                 this.setState({ErrorVarialbe:true});
                 console.log(t);
             } else {
@@ -165,10 +164,10 @@ class Paciente extends Component {
         if(contador == 0){
             return `/images/odontograma/normal.png`;
         } else { //SI NO QUE CONTINUE EL CODIGO
-            let estado = Pieza[contador-1].Estado // SE OBTIENE EL ESTADO DEL ULTIMO OBJETO DE LA PIEZA
-            let tratamiento = Pieza[contador-1].Tratamiento // SE OBTIENE EL TRATAMIENTO DEL ULTIMO OBJETO DE LA PIEZA
+            let estado = Pieza[contador-1].Estado; // SE OBTIENE EL ESTADO DEL ULTIMO OBJETO DE LA PIEZA
+            let tratamiento = Pieza[contador-1].Tratamiento; // SE OBTIENE EL TRATAMIENTO DEL ULTIMO OBJETO DE LA PIEZA
             // COMPROBAMOS LOS ESTADOS DE LA PIEZA PARA REALIZAR DETERMINAR LOS TRATAMIENTOS
-            if(estado == "A realizar"){
+            if (estado.ARealizar == true){
                 var nombre = "";
                 this.state.Tratamientos.forEach(t => {
                     if (t._id == tratamiento){
@@ -177,18 +176,198 @@ class Paciente extends Component {
                 }); 
                 return `/images/odontograma/tratamientos/${nombre}.png`;
             } 
-            else if(estado == "Realizado"){
+            else if (estado.Realizado == true){
                 var nombre = "";
                 this.state.Tratamientos.map(t => {
                     if(t._id == tratamiento){
                         nombre = t.Nombre;   
                     }      
                 })
-                return `/images/odontograma/Azul/tratamientos/${t.Nombre}.png`;
+                return `/images/odontograma/Azul/tratamientos/${nombre}.png`;
             } else {
                 return `/images/odontograma/normal.png`;
             }
         }
+    }
+    // FUNCION PARA RENDERIZAR LAS CARAS DE CADA TRATAMIENTO
+    CarasString = (Caras) => {
+            if(Caras.Mesial == true && Caras.Distal == false && Caras.Oclusal  == false && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == false){
+                return "Mesial";
+            } else if (Caras.Mesial == false && Caras.Distal == true && Caras.Oclusal  == false && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == false){
+                return "Distal";
+            } else if (Caras.Mesial == false && Caras.Distal == false && Caras.Oclusal  == true && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == false){
+                return "Oclusal";
+            } else if (Caras.Mesial == false && Caras.Distal == false && Caras.Oclusal  == false && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == false){
+                return "Palatina";
+            } else if (Caras.Mesial == false && Caras.Distal == false && Caras.Oclusal  == false && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == false){
+                return "Lingual";
+            } else if (Caras.Mesial == false && Caras.Distal == false && Caras.Oclusal  == false && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == true){
+                return "Vestibular";
+            } else if (Caras.Mesial == true && Caras.Distal == true && Caras.Oclusal  == false && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == false){
+                return "Mesial - Distal";
+            } else if (Caras.Mesial == true && Caras.Distal == true && Caras.Oclusal  == true && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == false){
+                return "Mesial - Distal - Oclusal";
+            } else if (Caras.Mesial == true && Caras.Distal == true && Caras.Oclusal  == true && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == false){
+                return "Mesial - Distal - Oclusal - Palatina";
+            } else if (Caras.Mesial == true && Caras.Distal == true && Caras.Oclusal  == true && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == false){
+                return "Mesial - Distal - Oclusal - Palatina - Lingual";
+            } else if (Caras.Mesial == true && Caras.Distal == true && Caras.Oclusal  == true && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == true){
+                return "Mesial - Distal - Oclusal - Palatina - Vestibular";
+            } else if (Caras.Mesial == true && Caras.Distal == true && Caras.Oclusal  == true && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == true){
+                return "Mesial - Distal - Oclusal - Lingual - Vestibular";
+            } else if (Caras.Mesial == true && Caras.Distal == true && Caras.Oclusal  == false && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == true){
+                return "Mesial - Distal - Palatina - Lingual - Vestibular";
+            } else if (Caras.Mesial == true && Caras.Distal == false && Caras.Oclusal  == true && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == true){
+                return "Mesial - Oclusal - Palatina - Lingual - Vestibular";
+            } else if (Caras.Mesial == false && Caras.Distal == true && Caras.Oclusal  == true && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == true){
+                return "Distal - Oclusal - Palatina - Lingual - Vestibular";
+            } else if (Caras.Mesial == false && Caras.Distal == true && Caras.Oclusal  == true && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == false){
+                return "Distal - Oclusal";
+            } else if (Caras.Mesial == false && Caras.Distal == true && Caras.Oclusal  == false && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == false){
+                return "Distal - Palatina";
+            } else if (Caras.Mesial == false && Caras.Distal == true && Caras.Oclusal  == false && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == false){
+                return "Distal - Lingual";
+            } else if (Caras.Mesial == false && Caras.Distal == true && Caras.Oclusal  == false && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == true){
+                return "Distal - Vestibular";
+            } else if (Caras.Mesial == false && Caras.Distal == false && Caras.Oclusal  == true && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == true){
+                return "Oclusal - Vestibular";
+            } else if (Caras.Mesial == false && Caras.Distal == false && Caras.Oclusal  == false && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == true){
+                return "Palatina - Vestibular";
+            } else if (Caras.Mesial == false && Caras.Distal == false && Caras.Oclusal  == false && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == true){
+                return "Lingual - Vestibular";
+            } else if (Caras.Mesial == false && Caras.Distal == false && Caras.Oclusal  == true && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == false){
+                return "Oclusal - Palatina";
+            } else if (Caras.Mesial == false && Caras.Distal == false && Caras.Oclusal  == true && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == false){
+                return "Oclusal - Lingual";
+            } else if (Caras.Mesial == false && Caras.Distal == false && Caras.Oclusal  == false && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == false){
+                return "Palatina - Lingual";
+            } else {
+                return "Paja seguir";
+            }                                                    
+    }
+    // FUNCION PARA PASAR DE ESTADO A REALIAR A REALIZADO
+    PasarTratamientoArealizado = (pieza) => {
+        let contador = 0;
+        let error = false;
+        // COPIAMOS LOS DATOS DEL PACIENTE
+        let PacienteCopy = Object.assign({}, this.state.Paciente);   
+        // OBTENEMOS LA PIEZA QUE NECESITAMOS CAMBIAR DE ESTADO  
+        const Pieza = PacienteCopy[0].Odontograma[pieza];
+        // RECORREMOS LA PIEZA PARA SABER LA CANTIDAD DE TRATAMIENTOS REALIZADOS
+        Pieza.forEach(element => {contador++;});
+        // OBTENEMOS EL ESTADO DE EL ULTIMO TRATAMIENTO
+        const estado = Pieza[contador-1].Estado;  
+        // SI EL TRATAMIENTO ES A REALIZAR LO CAMBIAMOS A REALIZADO
+        if(estado.ARealizar == true){
+            Pieza[contador-1].Estado.ARealizar = false;
+            Pieza[contador-1].Estado.Realizado = true;
+        } else return (
+            error == true,
+            console.log("Error")
+        );
+        // HACEMOS QUE LA PIEZA ORIGINAL AHORA TENGA EL ESTADO DEL ULTIMO TRATAMIENTO CAMBIADO
+        PacienteCopy[0].Odontograma[pieza] = Pieza;
+        // ACTUALIZAMOS EL STATE
+        this.setState({Paciente:PacienteCopy});
+        // EDITAMOS EL PACIENTE
+        if(error == true){
+            this.setState({ErrorVarialbe:true});
+        } else {
+            fetch(`/api/Paciente/${this.props.match.params.id}`, {
+                method: 'PUT',
+                body: JSON.stringify(this.state.Paciente[0]),
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(res => res.json())
+                .catch(err => { console.log(err); });
+        } 
+        this.fetchPaciente(this.props.match.params.id);
+    }
+    // FUNCION PARA ANULAR EL TRATAMIENTO DE UNA PIEZA
+    AnularTratamiento = (pieza) => {
+         // COPIAMOS LOS DATOS DEL PACIENTE
+         let PacienteCopy = Object.assign({}, this.state.Paciente);   
+         // OBTENEMOS LA PIEZA QUE NECESITAMOS ELIMINAR SU ULTIMO TRATAMIENTO
+         const Pieza = PacienteCopy[0].Odontograma[pieza];
+         // ELIMINAMOS EL ULTIMO ELEMENTO DEL ARRAY
+         Pieza.pop();
+         // HACEMOS QUE LA PIEZA ORIGINAL AHORA TENGA EL ESTADO DEL ULTIMO TRATAMIENTO CAMBIADO
+        PacienteCopy[0].Odontograma[pieza] = Pieza;
+        // ACTUALIZAMOS EL STATE
+        this.setState({Paciente:PacienteCopy});
+        // EDITAMOS EL PACIENTE
+        if(error == true){
+            this.setState({ErrorVarialbe:true});
+        } else {
+            fetch(`/api/Paciente/${this.props.match.params.id}`, {
+                method: 'PUT',
+                body: JSON.stringify(this.state.Paciente[0]),
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(res => res.json())
+                .catch(err => { console.log(err); });
+        } 
+        this.fetchPaciente(this.props.match.params.id);
+    }
+    // FUNCION PARA CONFIRMAR TRATAMIENTOS 
+    ConfirmarTratamiento = (pieza) => {
+        let contador = 0;
+        let error = false;
+        // COPIAMOS LOS DATOS DEL PACIENTE
+        let PacienteCopy = Object.assign({}, this.state.Paciente);   
+        // OBTENEMOS LA PIEZA QUE NECESITAMOS CAMBIAR DE ESTADO  
+        const Pieza = PacienteCopy[0].Odontograma[pieza];
+        // RECORREMOS LA PIEZA PARA SABER LA CANTIDAD DE TRATAMIENTOS REALIZADOS
+        Pieza.forEach(element => {contador++;});
+        // OBTENEMOS EL ESTADO DE EL ULTIMO TRATAMIENTO
+        const estado = Pieza[contador-1].Estado;  
+        // SI EL TRATAMIENTO ES A REALIZAR LO CAMBIAMOS A REALIZADO
+        if(estado.Realizado == true){
+            Pieza[contador-1].Estado.Realizado = false;
+            Pieza[contador-1].Estado.Confirmado = true;
+        } else return (
+            error == true,
+            console.log("Error")
+        );
+        // HACEMOS QUE LA PIEZA ORIGINAL AHORA TENGA EL ESTADO DEL ULTIMO TRATAMIENTO CAMBIADO
+        PacienteCopy[0].Odontograma[pieza] = Pieza;
+        // ACTUALIZAMOS EL STATE
+        this.setState({Paciente:PacienteCopy});
+        // EDITAMOS EL PACIENTE
+        if(error == true){
+            this.setState({ErrorVarialbe:true});
+        } else {
+            fetch(`/api/Paciente/${this.props.match.params.id}`, {
+                method: 'PUT',
+                body: JSON.stringify(this.state.Paciente[0]),
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(res => res.json())
+                .catch(err => { console.log(err); });
+        } 
+        this.fetchPaciente(this.props.match.params.id);
+    }
+    HistorialDiente = () => {
+        // this.state.Paciente[0].Odontograma[this.state.PiezaSeleccionada].map(p => {
+        //     if(p.Estado.Realizado != true && p.Estado.ARealizar != true){
+        //         return (
+        //             <tr key={p._id}>
+        //                 <td>{p.Fecha.substring(0, 10)}</td> 
+        //                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : this.CarasString(p.Caras)}</td>
+        //                 {this.state.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(<td key={t._id}>{t.Nombre}</td>)}})} 
+        //             </tr>
+        //         )
+        //     }
+        // })
     }
     render(){
         return(
@@ -197,7 +376,14 @@ class Paciente extends Component {
                 <MODALHISTORIACLINICA 
                     Paciente={this.state.Paciente[0].HistoriaClinica}
                 />
-                <MODALHISTORIADIENTE/>
+                <MODALHISTORIADIENTE
+                    Paciente={this.state.Paciente[0]}
+                    PiezaSeleccionada={this.state.PiezaSeleccionada}
+                    HistorialDiente={this.HistorialDiente}
+                    Tratamientos={this.state.Tratamientos} 
+                    PiezaSeleccionada={this.state.PiezaSeleccionada}
+                    CarasString={this.CarasString}
+                />
                 <MODALTRATAMIENTOS 
                     Tratamientos={this.state.Tratamientos} 
                     handleChangeTratamientos={this.handleChangeTratamientos}
@@ -220,7 +406,7 @@ class Paciente extends Component {
                     handleChangePiezas={this.handleChangePiezas} 
                     TratamientoImg={this.TratamientoImg} 
                     PiezaSeleccionada={this.state.PiezaSeleccionada}
-                    Tratamientos={this.state.Tratamientos}
+                    Tratamientos={this.state.Tratamientos} 
                 />
                 </div>
                 {/* <TABLAS/> */}
@@ -229,8 +415,17 @@ class Paciente extends Component {
                         <AREALIZAR 
                             Paciente={this.state.Paciente[0].Odontograma} 
                             Tratamientos={this.state.Tratamientos}
+                            CarasString={this.CarasString}
+                            TablaArealizar={this.TablaArealizar}
+                            PasarTratamientoArealizado={this.PasarTratamientoArealizado}
+                            AnularTratamiento={this.AnularTratamiento}
                         />
-                        <REALIZADOS/>
+                        <REALIZADOS
+                            Paciente={this.state.Paciente[0].Odontograma} 
+                            Tratamientos={this.state.Tratamientos}
+                            CarasString={this.CarasString}
+                            ConfirmarTratamiento={this.ConfirmarTratamiento}
+                        />
                     </div>
                 </div>
             </div>
