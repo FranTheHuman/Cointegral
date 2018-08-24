@@ -21,14 +21,14 @@ class Home extends Component {
             } );
     } 
     editTurnos(id) {
-        // fetch(`/api/TurnosConfirmar/${id}`, {
-        //         method: 'PUT',
-        //         headers: {
-        //         'Accept': 'application/json',
-        //         'Content-Type': 'application/json'
-        //         }  
-        //     })
-        // .then(this.fetchTurnos())
+        fetch(`/api/TurnosConfirmar/${id}`, {
+                method: 'PUT',
+                headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+                }  
+            })
+        .then(this.fetchTurnos())
     }
     TipoMensaje(){
         let contador = 0;

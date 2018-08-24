@@ -4,8 +4,10 @@
 - Diseño y creacion de la estructura de datos.                  - LISTO
 - Estructurar aplicacion de cliente, Administrador2 (React).    - LISTO
 - Crear las api's.                                              - LISTO
-- Aplicacion Cliente con datos dinamicos. (Odontograma - Turnos - Busqueda de paciente - Modal dientes de leche - Arreglar el inicio en                                                donde se setea a confirmado)
-- Validacion de los datos. (Nuevo Paciente - Paciente ficha - Turnos - Odontologos - Editar Paciente)
+- Aplicacion Cliente con datos dinamicos. 
+    (Turnos - Busqueda de paciente)
+- Validacion de los datos. 
+    (Nuevo Paciente - Paciente ficha - Turnos - Odontologos - Editar Paciente)
 - Manejo de errores y solucion.
 - Aprender Responsive Desing.
 

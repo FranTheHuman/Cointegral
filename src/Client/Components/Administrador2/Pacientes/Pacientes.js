@@ -8,7 +8,7 @@ class Pacientes extends Component {
         this.state = {
             Paciente: [],
             ObraSocial: [],
-            Nombre: '',
+            NombreBuscar: '',
             Dni: '',
             Apellido: ''
         }; 
@@ -30,11 +30,24 @@ class Pacientes extends Component {
                 this.setState({ObraSocial: data}); 
             } );
     }
+    search = (e) => {  
+            fetch(`/api/Pacientes/${this.state.NombreBuscar}`)  
+                .then(res => res.json())
+                .then(data => { 
+                    this.setState({Paciente: data}); 
+                } ); 
+            e.preventDefault();
+    }
     componentDidMount(){
         this.fetchPacientes();
         this.fetchObraSociales();
     }
-
+    handleChange = (e) => {
+        const  { value }  = e.target;
+        this.setState({
+            NombreBuscar: value
+        })  
+    }
     NombreObraSocial(id, array) {
         array.map(i => {
             if(i._id == id){
@@ -46,7 +59,7 @@ class Pacientes extends Component {
     render(){
         return(
             <div>
-                <BusqedaPaciente/>
+                <BusqedaPaciente handleChange={this.handleChange} NombreBuscar={this.state.NombreBuscar} search={this.search}/>
                 <TablaPacientes  Paciente={this.state.Paciente} ObraSocial={this.state.ObraSocial} NombreObraSocial={this.NombreObraSocial}/>
             </div>
         )

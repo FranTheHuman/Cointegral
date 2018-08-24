@@ -27,14 +27,14 @@ const ODONTOGRAMA = (props) => (
                                 <img className="ml-2" src={props.TratamientoImg("Pieza11")} alt="" />
                             </div>
                             <div className="row ml-4 mt-1">
-                                <img data-toggle="modal" data-target="#ModalTratamientos" data-whatever="@mdo" className="ml-2" onClick={()=>props.handleChangePiezas("Pieza18")} src="/images/odontograma/Rojos/dos/OdontogramaRojo2.png" alt="" />
-                                <img data-toggle="modal" data-target="#ModalTratamientos" data-whatever="@mdo" className="ml-2" onClick={()=>props.handleChangePiezas("Pieza17")} src="/images/odontograma/normal.png" alt="" /> 
-                                <img data-toggle="modal" data-target="#ModalTratamientos" data-whatever="@mdo" className="ml-2" onClick={()=>props.handleChangePiezas("Pieza16")} src="/images/odontograma/normal.png" alt="" />  
-                                <img data-toggle="modal" data-target="#ModalTratamientos" data-whatever="@mdo" className="ml-2" onClick={()=>props.handleChangePiezas("Pieza15")} src="/images/odontograma/normal.png" alt="" /> 
-                                <img data-toggle="modal" data-target="#ModalTratamientos" data-whatever="@mdo" className="ml-2" onClick={()=>props.handleChangePiezas("Pieza14")} src="/images/odontograma/normal.png" alt="" /> 
-                                <img data-toggle="modal" data-target="#ModalTratamientos" data-whatever="@mdo" className="ml-2" onClick={()=>props.handleChangePiezas("Pieza13")} src="/images/odontograma/Rojos/dos/OdontogramaRojo2.png" alt="" />
-                                <img data-toggle="modal" data-target="#ModalTratamientos" data-whatever="@mdo" className="ml-2" onClick={()=>props.handleChangePiezas("Pieza12")} src="/images/odontograma/normal.png" alt="" />
-                                <img data-toggle="modal" data-target="#ModalTratamientos" data-whatever="@mdo" className="ml-2" onClick={()=>props.handleChangePiezas("Pieza11")} src="/images/odontograma/normal.png" alt="" />
+                                <img data-toggle="modal" data-target="#ModalTratamientos" data-whatever="@mdo" className="ml-2" onClick={()=>props.handleChangePiezas("Pieza18")} src={props.TratamientoImgPieza("Pieza18")} alt="" />
+                                <img data-toggle="modal" data-target="#ModalTratamientos" data-whatever="@mdo" className="ml-2" onClick={()=>props.handleChangePiezas("Pieza17")} src={props.TratamientoImgPieza("Pieza17")} alt="" /> 
+                                <img data-toggle="modal" data-target="#ModalTratamientos" data-whatever="@mdo" className="ml-2" onClick={()=>props.handleChangePiezas("Pieza16")} src={props.TratamientoImgPieza("Pieza16")} alt="" />  
+                                <img data-toggle="modal" data-target="#ModalTratamientos" data-whatever="@mdo" className="ml-2" onClick={()=>props.handleChangePiezas("Pieza15")} src={props.TratamientoImgPieza("Pieza15")} alt="" /> 
+                                <img data-toggle="modal" data-target="#ModalTratamientos" data-whatever="@mdo" className="ml-2" onClick={()=>props.handleChangePiezas("Pieza14")} src={props.TratamientoImgPieza("Pieza14")} alt="" /> 
+                                <img data-toggle="modal" data-target="#ModalTratamientos" data-whatever="@mdo" className="ml-2" onClick={()=>props.handleChangePiezas("Pieza13")} src={props.TratamientoImgPieza("Pieza13")} alt="" />
+                                <img data-toggle="modal" data-target="#ModalTratamientos" data-whatever="@mdo" className="ml-2" onClick={()=>props.handleChangePiezas("Pieza12")} src={props.TratamientoImgPieza("Pieza12")} alt="" />
+                                <img data-toggle="modal" data-target="#ModalTratamientos" data-whatever="@mdo" className="ml-2" onClick={()=>props.handleChangePiezas("Pieza11")} src={props.TratamientoImgPieza("Pieza11")} alt="" />
                             </div>
                         </div>
                     </div>
@@ -63,14 +63,14 @@ const ODONTOGRAMA = (props) => (
                                 <img className="ml-2" src={props.TratamientoImg("Pieza28")} alt="" />
                             </div>
                             <div className="row ml-4 mt-1">
-                                <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza21")} data-whatever="@mdo"><img className="ml-2" src="/images/odontograma/normal.png" alt="" /></a> 
-                                <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza22")} data-whatever="@mdo"><img className="ml-2" src="/images/odontograma/normal.png" alt="" /></a> 
-                                <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza23")} data-whatever="@mdo"><img className="ml-2" src="/images/odontograma/normal.png" alt="" /></a>  
-                                <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza24")} data-whatever="@mdo"><img className="ml-2" src="/images/odontograma/normal.png" alt="" /></a> 
-                                <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza25")} data-whatever="@mdo"><img className="ml-2" src="/images/odontograma/normal.png" alt="" /></a>  
-                                <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza26")} data-whatever="@mdo"><img className="ml-2" src="/images/odontograma/normal.png" alt="" /></a> 
-                                <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza27")} data-whatever="@mdo"><img className="ml-2" src="/images/odontograma/normal.png" alt="" /></a>
-                                <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza28")} data-whatever="@mdo"><img className="ml-2" src="/images/odontograma/normal.png" alt="" /></a>  
+                                <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza21")} data-whatever="@mdo"><img className="ml-2" src={props.TratamientoImgPieza("Pieza21")} alt="" /></a> 
+                                <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza22")} data-whatever="@mdo"><img className="ml-2" src={props.TratamientoImgPieza("Pieza22")} alt="" /></a> 
+                                <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza23")} data-whatever="@mdo"><img className="ml-2" src={props.TratamientoImgPieza("Pieza23")} alt="" /></a>  
+                                <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza24")} data-whatever="@mdo"><img className="ml-2" src={props.TratamientoImgPieza("Pieza24")} alt="" /></a> 
+                                <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza25")} data-whatever="@mdo"><img className="ml-2" src={props.TratamientoImgPieza("Pieza25")} alt="" /></a>  
+                                <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza26")} data-whatever="@mdo"><img className="ml-2" src={props.TratamientoImgPieza("Pieza26")} alt="" /></a> 
+                                <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza27")} data-whatever="@mdo"><img className="ml-2" src={props.TratamientoImgPieza("Pieza27")} alt="" /></a>
+                                <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza28")} data-whatever="@mdo"><img className="ml-2" src={props.TratamientoImgPieza("Pieza28")} alt="" /></a>  
                             </div>
                         </div>
                     </div>
@@ -103,14 +103,14 @@ const ODONTOGRAMA = (props) => (
                                     <img className="ml-2" src={props.TratamientoImg("Pieza41")} alt="" /> 
                                 </div>
                                 <div className="row ml-4 mt-1">
-                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza48")} data-whatever="@mdo"><img className="ml-2" src="/images/odontograma/normal.png" alt="" /></a> 
-                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza47")} data-whatever="@mdo"><img className="ml-2" src="/images/odontograma/normal.png" alt="" /></a> 
-                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza46")} data-whatever="@mdo"><img className="ml-2" src="/images/odontograma/normal.png" alt="" /></a>  
-                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza45")} data-whatever="@mdo"><img className="ml-2" src="/images/odontograma/normal.png" alt="" /></a> 
-                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza44")} data-whatever="@mdo"><img className="ml-2" src="/images/odontograma/normal.png" alt="" /></a>  
-                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza43")} data-whatever="@mdo"><img className="ml-2" src="/images/odontograma/normal.png" alt="" /></a> 
-                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza42")} data-whatever="@mdo"><img className="ml-2" src="/images/odontograma/normal.png" alt="" /></a>
-                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza41")} data-whatever="@mdo"><img className="ml-2" src="/images/odontograma/normal.png" alt="" /></a> 
+                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza48")} data-whatever="@mdo"><img className="ml-2" src={props.TratamientoImgPieza("Pieza48")} alt="" /></a> 
+                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza47")} data-whatever="@mdo"><img className="ml-2" src={props.TratamientoImgPieza("Pieza47")} alt="" /></a> 
+                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza46")} data-whatever="@mdo"><img className="ml-2" src={props.TratamientoImgPieza("Pieza46")} alt="" /></a>  
+                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza45")} data-whatever="@mdo"><img className="ml-2" src={props.TratamientoImgPieza("Pieza45")} alt="" /></a> 
+                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza44")} data-whatever="@mdo"><img className="ml-2" src={props.TratamientoImgPieza("Pieza44")} alt="" /></a>  
+                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza43")} data-whatever="@mdo"><img className="ml-2" src={props.TratamientoImgPieza("Pieza43")} alt="" /></a> 
+                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza42")} data-whatever="@mdo"><img className="ml-2" src={props.TratamientoImgPieza("Pieza42")} alt="" /></a>
+                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza41")} data-whatever="@mdo"><img className="ml-2" src={props.TratamientoImgPieza("Pieza41")} alt="" /></a> 
                                 </div>
                             </div>
                         </div>
@@ -139,14 +139,14 @@ const ODONTOGRAMA = (props) => (
                                     <img className="ml-2" src={props.TratamientoImg("Pieza38")} alt="" />
                                 </div>
                                 <div className="row ml-4 mt-1">
-                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza31")} data-whatever="@mdo"><img className="ml-2" src="/images/odontograma/normal.png" alt="" /></a> 
-                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza32")} data-whatever="@mdo"><img className="ml-2" src="/images/odontograma/normal.png" alt="" /></a> 
-                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza33")} data-whatever="@mdo"><img className="ml-2" src="/images/odontograma/normal.png" alt="" /></a>  
-                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza34")} data-whatever="@mdo"><img className="ml-2" src="/images/odontograma/normal.png" alt="" /></a> 
-                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza35")} data-whatever="@mdo"><img className="ml-2" src="/images/odontograma/normal.png" alt=""/></a>  
-                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza36")} data-whatever="@mdo"><img className="ml-2" src="/images/odontograma/normal.png" alt="" /></a> 
-                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza37")} data-whatever="@mdo"><img className="ml-2" src="/images/odontograma/normal.png" alt="" /></a>
-                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza38")} data-whatever="@mdo"><img className="ml-2" src="/images/odontograma/normal.png" alt="" /></a>   
+                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza31")} data-whatever="@mdo"><img className="ml-2" src={props.TratamientoImgPieza("Pieza31")} alt="" /></a> 
+                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza32")} data-whatever="@mdo"><img className="ml-2" src={props.TratamientoImgPieza("Pieza32")} alt="" /></a> 
+                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza33")} data-whatever="@mdo"><img className="ml-2" src={props.TratamientoImgPieza("Pieza33")} alt="" /></a>  
+                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza34")} data-whatever="@mdo"><img className="ml-2" src={props.TratamientoImgPieza("Pieza34")} alt="" /></a> 
+                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza35")} data-whatever="@mdo"><img className="ml-2" src={props.TratamientoImgPieza("Pieza35")} alt=""/></a>  
+                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza36")} data-whatever="@mdo"><img className="ml-2" src={props.TratamientoImgPieza("Pieza36")} alt="" /></a> 
+                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza37")} data-whatever="@mdo"><img className="ml-2" src={props.TratamientoImgPieza("Pieza37")} alt="" /></a>
+                                    <a data-toggle="modal" data-target="#ModalTratamientos" onClick={()=>props.handleChangePiezas("Pieza38")} data-whatever="@mdo"><img className="ml-2" src={props.TratamientoImgPieza("Pieza38")} alt="" /></a>   
                                 </div>
                             </div>
                         </div>

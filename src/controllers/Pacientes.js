@@ -55,7 +55,7 @@ const EditPaciente = async (req, res) => {
 const PacientePorNombre = async (req, res) => {
 
     const PacienteBuscar = req.params.Nombre; 
-    const Respuesta = await Paciente.findOne( {"Personal": { "Nombre": PacienteBuscar }} );
+    const Respuesta = await Paciente.find({"Personal.Nombre":PacienteBuscar});
     console.log(Respuesta);
     res.json(Respuesta); 
 

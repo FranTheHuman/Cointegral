@@ -16,7 +16,7 @@ const ModalOdontogramaTratamientos = (props) => {
                             {
                                 props.Tratamientos.map(tratamiento => {               
                                     return(
-                                        <a key={tratamiento._id} onClick={()=>props.handleChangeTratamientos(tratamiento._id)} className="list-group-item list-group-item-action" id="MODALFICHAPACIENTE" data-toggle="modal" data-target="#MODALODONTOGRAMACARA">{tratamiento.Nombre}</a>
+                                        <a key={tratamiento._id} onClick={()=>props.handleChangeTratamientos(tratamiento._id)} className="list-group-item list-group-item-action" id="MODALFICHAPACIENTE" data-toggle="modal" data-target="#MODALODONTOGRAMACARA"><img src={`/images/odontograma/tratamientos/${tratamiento.Nombre}.png`}/> {tratamiento.Nombre}</a>
                                     )
                                 })
                             }                                                        

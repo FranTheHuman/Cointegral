@@ -1,15 +1,12 @@
-import React, { Component } from 'react';
-
-class BusqedaPaciente extends Component {
-    render() {
-        return(
+import React from 'react';
+const BusqedaPaciente = (props) => (
             <div>
-                <form id="BusquedaPacientes" className="form-inline">
+                <form onSubmit={props.search} id="BusquedaPacientes" className="form-inline">
                     <div className="form-group">
                         <input className="form-control mr-sm-2" type="search" placeholder="Dni" aria-label="Search" />
                     </div>
                     <div className="form-group">
-                        <input className="form-control mr-sm-2" type="search" placeholder="Nombre" aria-label="Search" />
+                        <input className="form-control mr-sm-2" type="search" placeholder="Nombre" aria-label="Search"  name="NombreBuscar" value={props.NombreBuscar} onChange={props.handleChange}/>
                     </div>
                     <div className="form-group">
                         <input className="form-control mr-sm-2" type="search" placeholder="Apellido" aria-label="Search" />
@@ -23,7 +20,4 @@ class BusqedaPaciente extends Component {
                 </form>
             </div>
         )
-    }
-}
-
 export default BusqedaPaciente;

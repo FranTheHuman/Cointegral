@@ -22,7 +22,7 @@ module.exports = (app, passport) => {
         app.post('/api/Paciente', Pacientes.AddPaciente); 
         app.put('/api/Paciente/:id', Pacientes.EditPaciente);
         app.delete('/api/Paciente/:id', Pacientes.DeletePaciente);   
-        app.get('/api/Paciente/:Nombre', Pacientes.PacientePorNombre);         
+        app.get('/api/Pacientes/:Nombre', Pacientes.PacientePorNombre);         
         // Odontologos:
         app.get('/api/Odontologos', Odontologos.AllOdontologos);
         app.post('/api/Odontologos', Odontologos.AddOdontologo); 

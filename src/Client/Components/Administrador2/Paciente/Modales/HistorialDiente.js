@@ -17,6 +17,7 @@ const ModalHistorialDiente = (props) => (
                                         <th scope="col">Fecha</th>
                                         <th scope="col">Caras</th>
                                         <th scope="col">Tratamiento</th>
+                                        <th scope="col">Observaciones</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -26,9 +27,10 @@ const ModalHistorialDiente = (props) => (
                                             if(p.Estado.Confirmado == true){
                                                 return (
                                                     <tr key={p._id}>
-                                                        <td>{p.Fecha.substring(0, 10)}</td> 
+                                                        <td>{p.Fecha.toString().substring(0, 10)}</td> 
                                                         <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                         {props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(<td key={t._id}>{t.Nombre}</td>)}})} 
+                                                        <td>{p.Observaciones}</td>
                                                     </tr>
                                                 )
                                             }

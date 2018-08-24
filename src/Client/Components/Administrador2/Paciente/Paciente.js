@@ -19,24 +19,24 @@ class Paciente extends Component {
                     HistoriaClinica: { MedicoCabecera: "", ServUrgenciaBool: false, ServUrgen: "", HospitalizacionBool: false, HospitalizacionRazon: "", TratamientoMedicoBool: false, TratamientoMedicoRazon: "", Alergias: "", Afecciones: "", Medicamentos: "", FumaBool: false, FumaCuanto: 0, BebeBool: false, BebeCuanto: 0, EmbarazadaBool:  false, EmbarazadaTiempo: 0, ProblemaRadiante: false, Otros: "", Observaciones: "", DificultadHablar: false, DificultadMasticar: false, DificultadAbrirBoca: false, MovilidadEnDientes: false, EnciasSangrantes: false, PusBoca: false, PusDonde: "", EstadoHigieneBucal: "", 
                                EstadoDeTejidosBlandos: { Lengua: "", Carillos: "", PresentaSarro: false, Labios: "", PisoDeBoca: "", EstadoGfngivoPeropdontal: "", CantidadDientes: "", EnfermedadPeriodental: ""}},
                     Odontograma: { 
-                                   Pieza11: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza12: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
-                                   Pieza13: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza14: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza15: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
-                                   Pieza16: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza17: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza18: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
-                                   Pieza21: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza22: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza23: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
-                                   Pieza24: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza25: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza26: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
-                                   Pieza27: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza28: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza31: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
-                                   Pieza32: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza33: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza34: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
-                                   Pieza35: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza36: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza37: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
-                                   Pieza38: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza41: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza42: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
-                                   Pieza43: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza44: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza45: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
-                                   Pieza46: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza47: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza48: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
+                                   Pieza11: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza12: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
+                                   Pieza13: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza14: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza15: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
+                                   Pieza16: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza17: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza18: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
+                                   Pieza21: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza22: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza23: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
+                                   Pieza24: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza25: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza26: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
+                                   Pieza27: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza28: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza31: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
+                                   Pieza32: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza33: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza34: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
+                                   Pieza35: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza36: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza37: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
+                                   Pieza38: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza41: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza42: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
+                                   Pieza43: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza44: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza45: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
+                                   Pieza46: [ { _id: "", Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza47: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ], Pieza48: [ { Fecha: "", Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: false, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" } ],
                                 }
                 }
             ],
             ObraSocial: [{Nombre: ""}],
             Tratamientos: [ {_id: "", Nombre: "",} ],
             PiezaSeleccionada: "",
-            Nuevo: { Fecha: new Date(), Caras: { PzComplet: false, Mesial: false, Distal: false, Oclusal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: true, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" },
+            Nuevo: { Fecha: new Date(), Caras: { PzComplet: false, Mesial: false, Distal: false, Palatina: false, Lingual: false, Vestibular: false}, Estado: {ARealizar: true, Realizado: false, Confirmado: false}, Tratamiento: "", Observaciones: "" },
             ErrorVarialbe: null
         }; 
     }
@@ -73,6 +73,10 @@ class Paciente extends Component {
                 })
                     .then(res => res.json(), this.setState({ErrorVarialbe:false}), console.log(this.state.ErrorVarialbe))
                     .catch(err => { console.log(err); });
+                this.fetchPaciente(this.props.match.params.id);
+        } else {
+            e.preventDefault();
+            this.setState({ErrorVarialbe:true})
         }       
     }
     // ACTUALIZAR STATE DE LAS CARAS DE NUEVO(State)
@@ -152,7 +156,7 @@ class Paciente extends Component {
         NuevoCopy.Tratamiento = Tratamiento;                         
         this.setState({Nuevo:NuevoCopy});
     }
-    // DEFINIR IMAGEN DE TRATAMIENTO
+    // DEFINIR IMAGEN DE CARAS
     TratamientoImg = (pieza) => {
         let Pieza = this.state.Paciente[0].Odontograma[pieza];
         let contador = 0;
@@ -189,61 +193,134 @@ class Paciente extends Component {
             }
         }
     }
-    // FUNCION PARA RENDERIZAR LAS CARAS DE CADA TRATAMIENTO
-    CarasString = (Caras) => {
-            if(Caras.Mesial == true && Caras.Distal == false && Caras.Oclusal  == false && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == false){
-                return "Mesial";
-            } else if (Caras.Mesial == false && Caras.Distal == true && Caras.Oclusal  == false && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == false){
-                return "Distal";
-            } else if (Caras.Mesial == false && Caras.Distal == false && Caras.Oclusal  == true && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == false){
-                return "Oclusal";
-            } else if (Caras.Mesial == false && Caras.Distal == false && Caras.Oclusal  == false && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == false){
-                return "Palatina";
-            } else if (Caras.Mesial == false && Caras.Distal == false && Caras.Oclusal  == false && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == false){
-                return "Lingual";
-            } else if (Caras.Mesial == false && Caras.Distal == false && Caras.Oclusal  == false && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == true){
-                return "Vestibular";
-            } else if (Caras.Mesial == true && Caras.Distal == true && Caras.Oclusal  == false && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == false){
-                return "Mesial - Distal";
-            } else if (Caras.Mesial == true && Caras.Distal == true && Caras.Oclusal  == true && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == false){
-                return "Mesial - Distal - Oclusal";
-            } else if (Caras.Mesial == true && Caras.Distal == true && Caras.Oclusal  == true && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == false){
-                return "Mesial - Distal - Oclusal - Palatina";
-            } else if (Caras.Mesial == true && Caras.Distal == true && Caras.Oclusal  == true && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == false){
-                return "Mesial - Distal - Oclusal - Palatina - Lingual";
-            } else if (Caras.Mesial == true && Caras.Distal == true && Caras.Oclusal  == true && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == true){
-                return "Mesial - Distal - Oclusal - Palatina - Vestibular";
-            } else if (Caras.Mesial == true && Caras.Distal == true && Caras.Oclusal  == true && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == true){
-                return "Mesial - Distal - Oclusal - Lingual - Vestibular";
-            } else if (Caras.Mesial == true && Caras.Distal == true && Caras.Oclusal  == false && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == true){
-                return "Mesial - Distal - Palatina - Lingual - Vestibular";
-            } else if (Caras.Mesial == true && Caras.Distal == false && Caras.Oclusal  == true && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == true){
-                return "Mesial - Oclusal - Palatina - Lingual - Vestibular";
-            } else if (Caras.Mesial == false && Caras.Distal == true && Caras.Oclusal  == true && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == true){
-                return "Distal - Oclusal - Palatina - Lingual - Vestibular";
-            } else if (Caras.Mesial == false && Caras.Distal == true && Caras.Oclusal  == true && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == false){
-                return "Distal - Oclusal";
-            } else if (Caras.Mesial == false && Caras.Distal == true && Caras.Oclusal  == false && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == false){
-                return "Distal - Palatina";
-            } else if (Caras.Mesial == false && Caras.Distal == true && Caras.Oclusal  == false && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == false){
-                return "Distal - Lingual";
-            } else if (Caras.Mesial == false && Caras.Distal == true && Caras.Oclusal  == false && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == true){
-                return "Distal - Vestibular";
-            } else if (Caras.Mesial == false && Caras.Distal == false && Caras.Oclusal  == true && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == true){
-                return "Oclusal - Vestibular";
-            } else if (Caras.Mesial == false && Caras.Distal == false && Caras.Oclusal  == false && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == true){
-                return "Palatina - Vestibular";
-            } else if (Caras.Mesial == false && Caras.Distal == false && Caras.Oclusal  == false && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == true){
-                return "Lingual - Vestibular";
-            } else if (Caras.Mesial == false && Caras.Distal == false && Caras.Oclusal  == true && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == false){
-                return "Oclusal - Palatina";
-            } else if (Caras.Mesial == false && Caras.Distal == false && Caras.Oclusal  == true && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == false){
-                return "Oclusal - Lingual";
-            } else if (Caras.Mesial == false && Caras.Distal == false && Caras.Oclusal  == false && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == false){
-                return "Palatina - Lingual";
+    // DEFINIR IMAGEN DE LAS CARAS
+    TratamientoImgPieza = (pieza) => {
+        let Pieza = this.state.Paciente[0].Odontograma[pieza];
+        let contador = 0;
+        // RECORREMOS LA PIEZA PARA VER CUAANTOS OBJETOS TIENE
+        Pieza.forEach(element => {contador++;});
+        // SI EL CONTADOR SIGUE EN CERO QUE DEVUELVA LA IMAGEN NORMAL
+        if(contador == 0){
+            return `/images/odontograma/normal.png`;
+        } else { //SI NO QUE CONTINUE EL CODIGO
+            const estado = Pieza[contador-1].Estado; // SE OBTIENE EL ESTADO DEL ULTIMO OBJETO DE LA PIEZA
+            const Caras = Pieza[contador-1].Caras; // SE OBTIENE LAS CARAS DEL ULTIMO OBJETO DE LA PIEZA
+            // COMPROBAMOS LOS ESTADOS DE LA PIEZA PARA REALIZAR DETERMINAR LOS TRATAMIENTOS
+            if (estado.ARealizar == true){
+                if(Caras.PzComplet == true){return `/images/odontograma/rojos/OdontogramaRojo5.png`;}
+                // Una sola pieza seleccionada
+                if(Caras.Mesial == true && Caras.Distal == false && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == false){return `/images/odontograma/rojos/uno solo/OdontogramaRojo1.png`;}           
+                if(Caras.Mesial == false && Caras.Distal == true && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == false){return `/images/odontograma/rojos/uno solo/OdontogramaRojo25.png`;}
+                if(Caras.Mesial == false && Caras.Distal == false && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == false){return `/images/odontograma/rojos/uno solo/OdontogramaRojo24.png`;}
+                if(Caras.Mesial == false && Caras.Distal == false && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == false){return `/images/odontograma/rojos/uno solo/OdontogramaRojo23.png`;}
+                if(Caras.Mesial == false && Caras.Distal == false && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == true){return `/images/odontograma/rojos/uno solo/OdontogramaRojo26.png`;}
+                // Dos piezas seleccionadas 
+                if(Caras.Mesial == true && Caras.Distal == true && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == false){return `/images/odontograma/rojos/dos/OdontogramaRojo8.png`;}
+                if(Caras.Mesial == true && Caras.Distal == false && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == false){return `/images/odontograma/rojos/dos/OdontogramaRojo7.png`;}
+                if(Caras.Mesial == true && Caras.Distal == false && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == false){return `/images/odontograma/rojos/dos/OdontogramaRojo2.png`;}
+                if(Caras.Mesial == true && Caras.Distal == false && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == true){return `/images/odontograma/rojos/dos/OdontogramaRojo6.png`;}
+                if(Caras.Mesial == false && Caras.Distal == true && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == false){return `/images/odontograma/rojos/dos/OdontogramaRojo10.png`;} 
+                if(Caras.Mesial == false && Caras.Distal == true && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == false){return `/images/odontograma/rojos/dos/OdontogramaRojo28.png`;} 
+                if(Caras.Mesial == false && Caras.Distal == true && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == true){return `/images/odontograma/rojos/dos/OdontogramaRojo27.png`;} 
+                if(Caras.Mesial == false && Caras.Distal == false && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == false){return `/images/odontograma/rojos/dos/OdontogramaRojo11.png`;} 
+                if(Caras.Mesial == false && Caras.Distal == false && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == true){return `/images/odontograma/rojos/dos/OdontogramaRojo9.png`;} 
+                if(Caras.Mesial == false && Caras.Distal == false && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == true){return `/images/odontograma/rojos/dos/OdontogramaRojo14.png`;}
+                // Tres piezas seleccionadas
+                if(Caras.Mesial == true && Caras.Distal == true && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == false){return `/images/odontograma/rojos/tres/OdontogramaRojo13.png`;}
+                if(Caras.Mesial == true && Caras.Distal == true && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == false){return `/images/odontograma/rojos/tres/OdontogramaRojo3.png`;}
+                if(Caras.Mesial == true && Caras.Distal == true && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == true){return `/images/odontograma/rojos/tres/OdontogramaRojo30.png`;}
+                if(Caras.Mesial == false && Caras.Distal == true && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == false){return `/images/odontograma/rojos/tres/OdontogramaRojo18.png`;}
+                if(Caras.Mesial == false && Caras.Distal == true && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == true){return `/images/odontograma/rojos/tres/OdontogramaRojo15.png`;} 
+                if(Caras.Mesial == false && Caras.Distal == false && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == true){return `/images/odontograma/rojos/tres/OdontogramaRojo12.png`;} 
+                if(Caras.Mesial == true && Caras.Distal == false && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == true){return `/images/odontograma/rojos/tres/OdontogramaRojo16.png`;} 
+                if(Caras.Mesial == true && Caras.Distal == false && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == false){return `/images/odontograma/rojos/tres/OdontogramaRojo17.png`;}
+                if(Caras.Mesial == false && Caras.Distal == true && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == true){return `/images/odontograma/rojos/tres/OdontogramaRojo29.png`;} 
+                if(Caras.Mesial == false && Caras.Distal == true && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == true){return `/images/odontograma/rojos/tres/OdontogramaRojo14.png`;}                               
+                // Cuatro piezas seleccionadas
+                if(Caras.Mesial == true && Caras.Distal == true && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == false){return `/images/odontograma/rojos/Todos menos uno/OdontogramaRojo21.png`;}
+                if(Caras.Mesial == true && Caras.Distal == true && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == true){return `/images/odontograma/rojos/Todos menos uno/OdontogramaRojo22.png`;}
+                if(Caras.Mesial == true && Caras.Distal == true && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == true){return `/images/odontograma/rojos/Todos menos uno/OdontogramaRojo4.png`;}
+                if(Caras.Mesial == true && Caras.Distal == false && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == true){return `/images/odontograma/rojos/Todos menos uno/OdontogramaRojo20.png`;}
+                if(Caras.Mesial == false && Caras.Distal == true && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == true){return `/images/odontograma/rojos/Todos menos uno/OdontogramaRojo19.png`;}                 
+            } 
+            else if (estado.Realizado == true){
+                if(Caras.PzComplet == true){return `/images/odontograma/azul/OdontogramaAzulPzCompleta.png`;}
+                // Una sola pieza seleccionada
+                if(Caras.Mesial == true && Caras.Distal == false && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == false){return `/images/odontograma/azul/uno solo/OdontogramaAzul1.png`;}
+                if(Caras.Mesial == false && Caras.Distal == true && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == false){return `/images/odontograma/azul/uno solo/OdontogramaAzul25.png`;}
+                if(Caras.Mesial == false && Caras.Distal == false && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == false){return `/images/odontograma/azul/uno solo/OdontogramaAzul24.png`;}
+                if(Caras.Mesial == false && Caras.Distal == false && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == false){return `/images/odontograma/azul/uno solo/OdontogramaAzul23.png`;}
+                if(Caras.Mesial == false && Caras.Distal == false && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == true){return `/images/odontograma/azul/uno solo/OdontogramaAzul26.png`;}
+                // Dos piezas seleccionadas 
+                if(Caras.Mesial == true && Caras.Distal == true && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == false){return `/images/odontograma/azul/dos/OdontogramaAzul8.png`;}
+                if(Caras.Mesial == true && Caras.Distal == false && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == false){return `/images/odontograma/azul/dos/OdontogramaAzul7.png`;}
+                if(Caras.Mesial == true && Caras.Distal == false && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == false){return `/images/odontograma/azul/dos/OdontogramaAzul2.png`;}
+                if(Caras.Mesial == true && Caras.Distal == false && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == true){return `/images/odontograma/azul/dos/OdontogramaAzul6.png`;}
+                if(Caras.Mesial == false && Caras.Distal == true && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == false){return `/images/odontograma/azul/dos/OdontogramaAzul10.png`;} 
+                if(Caras.Mesial == false && Caras.Distal == true && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == false){return `/images/odontograma/azul/dos/OdontogramaAzul28.png`;} 
+                if(Caras.Mesial == false && Caras.Distal == true && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == true){return `/images/odontograma/azul/dos/OdontogramaAzul27.png`;} 
+                if(Caras.Mesial == false && Caras.Distal == false && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == false){return `/images/odontograma/azul/dos/OdontogramaAzul11.png`;} 
+                if(Caras.Mesial == false && Caras.Distal == false && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == true){return `/images/odontograma/azul/dos/OdontogramaAzul9.png`;} 
+                if(Caras.Mesial == false && Caras.Distal == false && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == true){return `/images/odontograma/azul/dos/OdontogramaAzul14.png`;}  
+                // Tres piezas seleccionadas
+                if(Caras.Mesial == true && Caras.Distal == true && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == false){return `/images/odontograma/azul/tres/OdontogramaAzul13.png`;}
+                if(Caras.Mesial == true && Caras.Distal == true && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == false){return `/images/odontograma/azul/tres/OdontogramaAzul3.png`;}
+                if(Caras.Mesial == true && Caras.Distal == true && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == true){return `/images/odontograma/azul/tres/OdontogramaAzul30.png`;}
+                if(Caras.Mesial == false && Caras.Distal == true && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == false){return `/images/odontograma/azul/tres/OdontogramaAzul18.png`;}
+                if(Caras.Mesial == false && Caras.Distal == true && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == true){return `/images/odontograma/azul/tres/OdontogramaAzul15.png`;} 
+                if(Caras.Mesial == false && Caras.Distal == false && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == true){return `/images/odontograma/azul/tres/OdontogramaAzul12.png`;} 
+                if(Caras.Mesial == true && Caras.Distal == false && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == true){return `/images/odontograma/azul/tres/OdontogramaAzul16.png`;} 
+                if(Caras.Mesial == true && Caras.Distal == false && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == false){return `/images/odontograma/azul/tres/OdontogramaAzul17.png`;}
+                if(Caras.Mesial == false && Caras.Distal == true && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == true){return `/images/odontograma/azul/tres/OdontogramaAzul29.png`;} 
+                if(Caras.Mesial == false && Caras.Distal == true && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == true){return `/images/odontograma/azul/tres/OdontogramaAzul14.png`;} 
+                // Cuatro piezas seleccionadas
+                if(Caras.Mesial == true && Caras.Distal == true && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == false){return `/images/odontograma/rojos/Todos menos uno/OdontogramaAzul21.png`;}
+                if(Caras.Mesial == true && Caras.Distal == true && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == true){return `/images/odontograma/rojos/Todos menos uno/OdontogramaAzul22.png`;}
+                if(Caras.Mesial == true && Caras.Distal == true && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == true){return `/images/odontograma/rojos/Todos menos uno/OdontogramaAzul4.png`;}
+                if(Caras.Mesial == true && Caras.Distal == false && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == true){return `/images/odontograma/rojos/Todos menos uno/OdontogramaAzul20.png`;}
+                if(Caras.Mesial == false && Caras.Distal == true && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == true){return `/images/odontograma/rojos/Todos menos uno/OdontogramaAzul19.png`;}   
             } else {
-                return "Paja seguir";
-            }                                                    
+                return `/images/odontograma/normal.png`;
+            }
+        }
+    }
+    // UNCION PARA RENDERIZAR LAS CARAS DE CADA TRATAMIENTO
+    CarasString = (Caras) => {
+        if(Caras.PzComplet == true){return `Pieza Completa`;}
+        // Una sola pieza seleccionada
+        if(Caras.Mesial == true && Caras.Distal == false && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == false){return `Mesial`;}      
+        if(Caras.Mesial == false && Caras.Distal == true && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == false){return `Distal`;}
+        if(Caras.Mesial == false && Caras.Distal == false && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == false){return `Palatina`;}
+        if(Caras.Mesial == false && Caras.Distal == false && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == false){return `Lingual`;}
+        if(Caras.Mesial == false && Caras.Distal == false && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == true){return `Vestibular`;}
+        // Dos piezas seleccionadas 
+        if(Caras.Mesial == true && Caras.Distal == true && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == false){return `Mesial - Distal`;}
+        if(Caras.Mesial == true && Caras.Distal == false && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == false){return `Mesial - Palatina`;}
+        if(Caras.Mesial == true && Caras.Distal == false && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == false){return `Mesial - Lingual`;}
+        if(Caras.Mesial == true && Caras.Distal == false && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == true){return `Mesial - Vestibular`;}
+        if(Caras.Mesial == false && Caras.Distal == true && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == false){return `Distal - Palatina`;} 
+        if(Caras.Mesial == false && Caras.Distal == true && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == false){return `Distal - Lingual`;} 
+        if(Caras.Mesial == false && Caras.Distal == true && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == true){return `Distal - Vestibular`;} 
+        if(Caras.Mesial == false && Caras.Distal == false && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == false){return `Palatina - Lingual`;} 
+        if(Caras.Mesial == false && Caras.Distal == false && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == true){return `Palatina - Vestibular`;} 
+        if(Caras.Mesial == false && Caras.Distal == false && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == true){return `Lingual - Vestibular`;}
+        // Tres piezas seleccionadas
+        if(Caras.Mesial == true && Caras.Distal == true && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == false){return `Mesial - Distal - Palatina`;}
+        if(Caras.Mesial == true && Caras.Distal == true && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == false){return `Mesial - Distal - Lingual`;}
+        if(Caras.Mesial == true && Caras.Distal == true && Caras.Palatina == false && Caras.Lingual == false && Caras.Vestibular == true){return `Mesial - Distal - Vestibular`;}
+        if(Caras.Mesial == false && Caras.Distal == true && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == false){return `Distal - Palatina - Lingual`;}
+        if(Caras.Mesial == false && Caras.Distal == true && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == true){return `Distal - Palatina - Vestibular`;} 
+        if(Caras.Mesial == false && Caras.Distal == false && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == true){return `Palatina - Lingual - Vestibular`;} 
+        if(Caras.Mesial == true && Caras.Distal == false && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == true){return `Mesial - Palatina - Vestibular`;} 
+        if(Caras.Mesial == true && Caras.Distal == false && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == false){return `Mesial - Palatina - Lingual`;}
+        if(Caras.Mesial == false && Caras.Distal == true && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == true){return `Distal - Lingual - Vestibular`;} 
+        if(Caras.Mesial == false && Caras.Distal == true && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == true){return `Distal - Lingual - Vestibular`;}           
+        // Cuatro piezas seleccionadas
+        if(Caras.Mesial == true && Caras.Distal == true && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == false){return `Mesial - Distal - Palatina - Lingual`;}
+        if(Caras.Mesial == true && Caras.Distal == true && Caras.Palatina == true && Caras.Lingual == false && Caras.Vestibular == true){return `Mesial - Distal - Palatina - Vestibular`;}
+        if(Caras.Mesial == true && Caras.Distal == true && Caras.Palatina == false && Caras.Lingual == true && Caras.Vestibular == true){return `Mesial - Distal - Lingual - Vestibular`;}
+        if(Caras.Mesial == true && Caras.Distal == false && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == true){return `Mesial - Palatina - Lingual - Vestibular`;}
+        if(Caras.Mesial == false && Caras.Distal == true && Caras.Palatina == true && Caras.Lingual == true && Caras.Vestibular == true){return `Distal - Palatina - Lingual - Vestibular`;}                                              
     }
     // FUNCION PARA PASAR DE ESTADO A REALIAR A REALIZADO
     PasarTratamientoArealizado = (pieza) => {
@@ -356,19 +433,6 @@ class Paciente extends Component {
         } 
         this.fetchPaciente(this.props.match.params.id);
     }
-    HistorialDiente = () => {
-        // this.state.Paciente[0].Odontograma[this.state.PiezaSeleccionada].map(p => {
-        //     if(p.Estado.Realizado != true && p.Estado.ARealizar != true){
-        //         return (
-        //             <tr key={p._id}>
-        //                 <td>{p.Fecha.substring(0, 10)}</td> 
-        //                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : this.CarasString(p.Caras)}</td>
-        //                 {this.state.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(<td key={t._id}>{t.Nombre}</td>)}})} 
-        //             </tr>
-        //         )
-        //     }
-        // })
-    }
     render(){
         return(
             <div>
@@ -379,7 +443,6 @@ class Paciente extends Component {
                 <MODALHISTORIADIENTE
                     Paciente={this.state.Paciente[0]}
                     PiezaSeleccionada={this.state.PiezaSeleccionada}
-                    HistorialDiente={this.HistorialDiente}
                     Tratamientos={this.state.Tratamientos} 
                     PiezaSeleccionada={this.state.PiezaSeleccionada}
                     CarasString={this.CarasString}
@@ -407,6 +470,7 @@ class Paciente extends Component {
                     TratamientoImg={this.TratamientoImg} 
                     PiezaSeleccionada={this.state.PiezaSeleccionada}
                     Tratamientos={this.state.Tratamientos} 
+                    TratamientoImgPieza={this.TratamientoImgPieza}
                 />
                 </div>
                 {/* <TABLAS/> */}

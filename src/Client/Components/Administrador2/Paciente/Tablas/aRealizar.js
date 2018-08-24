@@ -20,7 +20,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>11</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 {props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(<td key={t._id}>{t.Nombre}</td>)}})}
@@ -38,7 +38,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>12</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -56,7 +56,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>13</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -74,7 +74,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>14</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -92,7 +92,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>15</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -110,7 +110,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>16</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -128,7 +128,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>17</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -146,7 +146,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>18</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -164,7 +164,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>21</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -182,7 +182,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>22</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -200,7 +200,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>23</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -218,7 +218,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>24</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -236,7 +236,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>25</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -254,7 +254,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>26</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -272,7 +272,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>27</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -290,7 +290,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>28</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -308,7 +308,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>31</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -326,7 +326,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>32</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -344,7 +344,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>33</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -362,7 +362,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>34</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -380,7 +380,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>35</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -398,7 +398,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>36</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -416,7 +416,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>37</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -434,7 +434,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>38</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -452,7 +452,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>41</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -470,7 +470,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>42</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -488,7 +488,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>43</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -506,7 +506,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>44</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -524,7 +524,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>45</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -542,7 +542,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>46</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -560,7 +560,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>47</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
@@ -578,7 +578,7 @@ const AREALIZAR = (props) =>  (
                                     if(p.Estado.ARealizar == true){
                                         return (
                                             <tr key={p._id}>
-                                                <td>{p.Fecha.substring(0, 10)}</td>
+                                                <td>{p.Fecha.toString().substring(0, 10)}</td>
                                                 <td>48</td>
                                                 <td>{p.Caras.PzComplet == true ? "Pieza Completa" : props.CarasString(p.Caras)}</td>
                                                 <td>{props.Tratamientos.map(t => {if(t._id == p.Tratamiento){return(t.Nombre)}})}</td>
