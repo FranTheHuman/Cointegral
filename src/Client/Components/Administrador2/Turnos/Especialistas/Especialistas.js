@@ -7,7 +7,7 @@ const Especialistas = (props) => (
             </button>
             <div className="dropdown-menu" aria-labelledby="dropdownMenuButton" id="SeleccionarDoctor-Doctores">
                 {
-                    props.Odontologo.map(odontologo => {
+                    props.Odontologos.map(odontologo => {
                         return (
                             <a key={odontologo._id} className="dropdown-item" href="#">{`${odontologo.Nombre} ${odontologo.Apellido}`}</a>
                         )

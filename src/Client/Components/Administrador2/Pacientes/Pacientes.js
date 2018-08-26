@@ -8,22 +8,18 @@ class Pacientes extends Component {
         this.state = {
             Paciente: [],
             ObraSocial: [],
-            NombreBuscar: '',
-            Dni: '',
-            Apellido: ''
-        }; 
-        this.fetchPacientes = this.fetchPacientes.bind(this);  
-        this.fetchObraSociales = this.fetchObraSociales.bind(this);  
+            ParametroBuscar: ''
+        };  
     }
 
-    fetchPacientes() { 
+    fetchPacientes = () => { 
         fetch('/api/Pacientes')  
             .then(res => res.json())
             .then(data => { 
                 this.setState({Paciente: data}); 
             } );
     }
-    fetchObraSociales() { 
+    fetchObraSociales = () => { 
         fetch('/api/ObraSocial')  
             .then(res => res.json())
             .then(data => { 
@@ -31,12 +27,12 @@ class Pacientes extends Component {
             } );
     }
     search = (e) => {  
-            fetch(`/api/Pacientes/${this.state.NombreBuscar}`)  
-                .then(res => res.json())
-                .then(data => { 
-                    this.setState({Paciente: data}); 
-                } ); 
-            e.preventDefault();
+        fetch(`/api/Pacientes/${this.state.ParametroBuscar}`)  
+            .then(res => res.json())
+            .then(data => { 
+                this.setState({Paciente: data}); 
+            } ); 
+        e.preventDefault();
     }
     componentDidMount(){
         this.fetchPacientes();
@@ -45,7 +41,7 @@ class Pacientes extends Component {
     handleChange = (e) => {
         const  { value }  = e.target;
         this.setState({
-            NombreBuscar: value
+            ParametroBuscar: value
         })  
     }
     NombreObraSocial(id, array) {
@@ -59,7 +55,7 @@ class Pacientes extends Component {
     render(){
         return(
             <div>
-                <BusqedaPaciente handleChange={this.handleChange} NombreBuscar={this.state.NombreBuscar} search={this.search}/>
+                <BusqedaPaciente handleChange={this.handleChange} ParametroBuscar={this.state.ParametroBuscar} search={this.search}/>
                 <TablaPacientes  Paciente={this.state.Paciente} ObraSocial={this.state.ObraSocial} NombreObraSocial={this.NombreObraSocial}/>
             </div>
         )

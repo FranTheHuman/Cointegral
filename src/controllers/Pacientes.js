@@ -50,15 +50,35 @@ const EditPaciente = async (req, res) => {
     res.json({status: 'Paciente Updated'});
 
 };
-
-// Buscar Paciente Por Nombre
-const PacientePorNombre = async (req, res) => {
-
-    const PacienteBuscar = req.params.Nombre; 
-    const Respuesta = await Paciente.find({"Personal.Nombre":PacienteBuscar});
-    console.log(Respuesta);
-    res.json(Respuesta); 
-
+// Buscar Paciente
+const PacienteBuscar = async (req, res) => {
+    const {Parametro} = req.params;
+    const parametro = Parametro.charAt(0).toUpperCase() + Parametro.slice(1); 
+    Paciente.find({"Personal.Nombre": parametro }, (err, paciente)=>{
+        if(err){return res.json({"Error status": "true"});}
+        if(paciente.length === 0){
+            Paciente.find({"Personal.Apellido": parametro}, (err, paciente2)=>{
+                if(err){return res.json({"Error status": "true"});}
+                if(paciente2.length === 0){
+                    Paciente.find({"Personal.Documento": Parametro}, (err, paciente3)=>{
+                        if(err){return res.json({"Error status": "true"});}
+                        if(paciente3.length === 0){
+                            res.json({"Error status": "true"});
+                        } else {
+                            console.log(paciente3);
+                            res.json(paciente3); 
+                        }
+                    })
+                } else {
+                    console.log(paciente2);
+                    res.json(paciente2); 
+                }
+            })
+        } else {
+            console.log(paciente);
+            res.json(paciente); 
+        }
+    })
 };
 
 module.exports = {
@@ -66,7 +86,7 @@ module.exports = {
     AllPacientes,
     DeletePaciente,
     EditPaciente,
-    PacientePorNombre,
+    PacienteBuscar,
     OnePaciente
 }
 

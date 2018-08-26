@@ -5,6 +5,7 @@ const ObraSociales = require('../controllers/ObrasSociales');
 const Pacientes = require('../controllers/Pacientes');
 const Odontologos = require('../controllers/Odontologos');
 const Turnos = require('../controllers/Turnos');
+
 // Routes
 module.exports = (app, passport) => {
 
@@ -22,12 +23,13 @@ module.exports = (app, passport) => {
         app.post('/api/Paciente', Pacientes.AddPaciente); 
         app.put('/api/Paciente/:id', Pacientes.EditPaciente);
         app.delete('/api/Paciente/:id', Pacientes.DeletePaciente);   
-        app.get('/api/Pacientes/:Nombre', Pacientes.PacientePorNombre);         
+        app.get('/api/Pacientes/:Parametro', Pacientes.PacienteBuscar);         
         // Odontologos:
         app.get('/api/Odontologos', Odontologos.AllOdontologos);
         app.post('/api/Odontologos', Odontologos.AddOdontologo); 
         app.put('/api/Odontologos/:id', Odontologos.EditOdontologo);
         app.delete('/api/Odontologos/:id', Odontologos.DeleteOdontologo);  
+        app.get('/api/Odontologo/:id', Odontologos.OneOdontologo);
         // Obra Social:
         app.get('/api/ObraSocial', ObraSociales.AllObrasSociales);
         app.get('/api/ObraSocial/:id', ObraSociales.OneObrasSocial);

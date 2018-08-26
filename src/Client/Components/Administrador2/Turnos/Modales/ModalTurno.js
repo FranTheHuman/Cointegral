@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class ModalTurnos extends Component {
     render() {
         return(
-            <div className="modal fade" id="exampleModalTurnos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal fade" id="exampleModalTurnos" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog" role="document">
                     <div className="modal-content" id="MODAL">
                         <div className="modal-header">

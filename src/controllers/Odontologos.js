@@ -42,10 +42,20 @@ const EditOdontologo = async (req, res) => {
 
 };
 
+const OneOdontologo = async (req, res) => {
+
+    const id = req.params.id 
+    const Respuesta = await Odontologo.find({"_id":id});
+    console.log(Respuesta);
+    res.json(Respuesta); 
+
+};
+
 module.exports = {
     EditOdontologo,
     DeleteOdontologo,
     AddOdontologo,
-    AllOdontologos
+    AllOdontologos,
+    OneOdontologo
 }
 

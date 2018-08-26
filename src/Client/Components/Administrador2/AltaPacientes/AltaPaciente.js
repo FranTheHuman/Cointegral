@@ -8,7 +8,7 @@ class AltaPaciente extends Component {
         super();
         this.state = {
             NuevoPaciente: { 
-                             Personal: { Nombre: "", Apellido: "", ObraSocial: "5b6afe88a365b446281df6f3", NºAfil:  "", FechaNac: "", Documento: 0, Telefono: 0, Email: "", Domicilio: "", EstadoCivil: "" }, 
+                             Personal: { Nombre: "", Apellido: "", ObraSocial: "5b6afe88a365b446281df6f3", NºAfil:  "", FechaNac: "", Documento: null, Telefono: null, Email: "", Domicilio: "", EstadoCivil: "" }, 
                              HistoriaClinica: { MedicoCabecera: "", ServUrgenciaBool: false, ServUrgen: "", HospitalizacionBool: false, HospitalizacionRazon: "", TratamientoMedicoBool: false, TratamientoMedicoRazon: "", Alergias: "", Afecciones: "", Medicamentos: "", FumaBool: false, FumaCuanto: 0, BebeBool: false, BebeCuanto: 0, EmbarazadaBool:  false, EmbarazadaTiempo: 0, ProblemaRadiante: false, Otros: "", Observaciones: "", DificultadHablar: false, DificultadMasticar: false, DificultadAbrirBoca: false, MovilidadEnDientes: false, EnciasSangrantes: false, PusBoca: false, PusDonde: "", EstadoHigieneBucal: "", 
                                                 EstadoDeTejidosBlandos: { Lengua: "", Carillos: "", PresentaSarro: false, Labios: "", PisoDeBoca: "", EstadoGfngivoPeropdontal: "", CantidadDientes: "", EnfermedadPeriodental: ""}} 
                            }, 
@@ -43,6 +43,12 @@ class AltaPaciente extends Component {
                 });
         event.preventDefault();
     }
+    // FUNCION PARA CONVERTIR LA PRIMERA LETRA EN MAYUSCULA
+    MaysPrimera = (string) => { 
+        const parametro = string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+        console.log(parametro);
+        return parametro;
+    }
     // FUNCION PARA OBTENER LAS OBRAS SOCIALES
     fetchObraSociales() { 
         fetch('/api/ObraSocial')  
@@ -73,11 +79,17 @@ class AltaPaciente extends Component {
     // FUNCION PARA SETEAR LOS ESTADOS CORRESPONDIENTES CON LA COLUMNA 3 --> Personal
     handleChangePaciente = (e) => { 
         const  { name, value }  = e.target;  
-            let NuevoPacienteCopy = Object.assign({}, this.state.NuevoPaciente);     
-            NuevoPacienteCopy.Personal[name] = value;                         
-            this.setState({NuevoPaciente:NuevoPacienteCopy});
-
-            console.log(`${name} ${value}  // ${this.state.NuevoPaciente.Personal[name]}`);       
+            if(name === "Nombre" || name == "Apellido"){ 
+                let NuevoPacienteCopy = Object.assign({}, this.state.NuevoPaciente);     
+                NuevoPacienteCopy.Personal[name] = this.MaysPrimera(value);                         
+                this.setState({NuevoPaciente:NuevoPacienteCopy});
+                console.log(`${name} ${this.MaysPrimera(value)}  // ${this.state.NuevoPaciente.Personal[name]}`);
+            } else {
+                let NuevoPacienteCopy = Object.assign({}, this.state.NuevoPaciente);     
+                NuevoPacienteCopy.Personal[name] = value;                         
+                this.setState({NuevoPaciente:NuevoPacienteCopy});
+                console.log(`${name} ${value}  // ${this.state.NuevoPaciente.Personal[name]}`); 
+            }             
     }
     // FUNCION PARA SETEAR LOS ESTADOS CORRESPONDIENTES CON LA COLUMNA 3 --> HistoriaClinica
     handleChangeColumna123 = (e) => { 
@@ -122,10 +134,24 @@ class AltaPaciente extends Component {
             {this.MensajeFunction()}
                 <div className="col-sm-12">
                     <div className="row">
-                        <FichaPersonal handleChange={this.handleChangePaciente} ObraSocial={this.state.ObraSocial} NuevoPaciente={this.state.NuevoPaciente}/>
-                        <Columna1 handleChange={this.handleChangeColumna123} NuevoPaciente={this.state.NuevoPaciente}/>
-                        <Columna2 handleChange={this.handleChangeColumna123} NuevoPaciente={this.state.NuevoPaciente}/>
-                        <Columna3 handleChange={this.handleChangeColumna123} handleChangeColumna3={this.handleChangeColumna3} NuevoPaciente={this.state.NuevoPaciente}/>
+                        <FichaPersonal 
+                            handleChange={this.handleChangePaciente} 
+                            ObraSocial={this.state.ObraSocial} 
+                            NuevoPaciente={this.state.NuevoPaciente}
+                        />
+                        <Columna1 
+                            handleChange={this.handleChangeColumna123} 
+                            NuevoPaciente={this.state.NuevoPaciente}
+                        />
+                        <Columna2 
+                            handleChange={this.handleChangeColumna123} 
+                            NuevoPaciente={this.state.NuevoPaciente}
+                        />
+                        <Columna3 
+                            handleChange={this.handleChangeColumna123} 
+                            handleChangeColumna3={this.handleChangeColumna3} 
+                            NuevoPaciente={this.state.NuevoPaciente}
+                        />
                     </div>
                 </div>              
             </form>
