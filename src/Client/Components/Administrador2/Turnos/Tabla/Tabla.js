@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Bloque from './bloque';
 const TablaTurnos = (props) => {
     const TurnosOcupados = {color: 'white'};
     return(
@@ -7,23 +7,23 @@ const TablaTurnos = (props) => {
             <table id="TABLA" className="table table-sm table-dark">
                 <thead>
                     <tr>
-                        <th scope="col"><a onClick={()=>props.VolverSemana()}><i className="fas fa-caret-left"></i></a></th>
+                        <th scope="col"><a onClick={()=>props.VolverSemana()}><i className="fas fa-caret-left fa-2x"></i></a></th>
                         <th scope="col">Lunes {props.Dias.Lunes}</th>
                         <th scope="col">Martes {props.Dias.Martes}</th>
                         <th scope="col">Miercoles {props.Dias.Miercoles}</th>
                         <th scope="col">Jueves {props.Dias.Jueves}</th>
                         <th scope="col">Viernes {props.Dias.Viernes}</th>
-                        <th scope="col"><a onClick={()=>props.PasarSemana()} ><i className="fas fa-caret-right"></i></a></th> 
+                        <th scope="col"><a onClick={()=>props.PasarSemana()} ><i className="fas fa-caret-right fa-2x"></i></a></th> 
                     </tr>
-                </thead>
+                </thead> 
                 <tbody>
                     <tr>
-                        <th scope="row">8:00</th>
-                        <td className="bg-success"><a href="" data-toggle="modal" data-target="#exampleModalTurnos"><i className="fas fa-plus-circle"></i></a></td>
-                        <td className="bg-danger"><a href="" data-toggle="modal" data-target="#exampleModalDESBLOQUEO"><i className="fas fa-plus-circle"></i></a></td>
-                        <td className="bg-success"><a href="" data-toggle="modal" data-target="#exampleModalTurnos"><i className="fas fa-plus-circle"></i></a></td>
-                        <td className="bg-success"><a href="" data-toggle="modal" data-target="#exampleModalTurnos"><i className="fas fa-plus-circle"></i></a></td>
-                        <td className="bg-danger"><a href="" data-toggle="modal" data-target="#exampleModalDESBLOQUEO"><i className="fas fa-plus-circle"></i></a></td>
+                        <th scope="row">8:00</th> 
+                        <Bloque EspecialistaSeleccionado={props.EspecialistaSeleccionado} Turnos={props.Turnos} Horario="8:00" Dia={props.Dias.Lunes} HandleChangeHorario={props.HandleChangeHorario}/>
+                        <td className="bg-danger"><a href="" data-toggle="modal" data-target="#exampleModalDESBLOQUEO" onClick={()=>props.HandleChangeHorario("08:00", "Martes")}><i className="fas fa-plus-circle"></i></a></td>
+                        <td className="bg-success"><a href="" data-toggle="modal" data-target="#exampleModalTurnos" onClick={()=>props.HandleChangeHorario("08:00", "Miercoles")}><i className="fas fa-plus-circle"></i></a></td>
+                        <td className="bg-success"><a href="" data-toggle="modal" data-target="#exampleModalTurnos" onClick={()=>props.HandleChangeHorario("08:00", "Jueves")}><i className="fas fa-plus-circle"></i></a></td>
+                        <td className="bg-danger"><a href="" data-toggle="modal" data-target="#exampleModalDESBLOQUEO" onClick={()=>props.HandleChangeHorario("08:00", "Viernes")}><i className="fas fa-plus-circle"></i></a></td>
                     </tr>
                     <tr>
                         <th scope="row">8:15</th>

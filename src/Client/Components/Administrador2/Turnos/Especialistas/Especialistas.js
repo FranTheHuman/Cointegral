@@ -9,7 +9,7 @@ const Especialistas = (props) => (
                 {
                     props.Odontologos.map(odontologo => {
                         return (
-                            <a key={odontologo._id} className="dropdown-item" href="#">{`${odontologo.Nombre} ${odontologo.Apellido}`}</a>
+                            <a key={odontologo._id} className="dropdown-item" href="#" name={odontologo._id} onClick={props.handleEspecialista}>{`${odontologo.Nombre} ${odontologo.Apellido}`}</a>
                         )
                     })                     
                 }
