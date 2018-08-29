@@ -9,25 +9,18 @@ class ObrasSociales extends Component {
             ObraSocial: [],
             Nombre: ''
         }; 
-        this.fetchObraSociales = this.fetchObraSociales.bind(this); 
-        this.addObraSocial = this.addObraSocial.bind(this);
-        this.handleChange = this.handleChange.bind(this);
     }
-
-    fetchObraSociales() { 
+    fetchObraSociales = () => { 
         fetch('/api/ObraSocial')  
             .then(res => res.json())
             .then(data => { 
-                this.setState({ObraSocial: data});
-                console.log(this.state.ObraSocial)
+                this.setState({ObraSocial: data}); 
             } );
     }
-    
     componentDidMount(){
         this.fetchObraSociales();
     }
-
-    addObraSocial(event){
+    addObraSocial = (event) => {
         fetch('/api/ObraSocial', {
                 method: 'POST',
                 body: JSON.stringify(this.state),
@@ -37,22 +30,19 @@ class ObrasSociales extends Component {
                 }
             })
                 .then(res => res.json())
-                .then(data => {
-                    console.log(data); 
+                .then(data => { 
                     this.setState({ Nombre: '' });
                     this.fetchObraSociales();
                 })
                 .catch(err => console.log(err));
         event.preventDefault();
     }
-
-    handleChange(e) {
+    handleChange = (e) => {
         const  { name, value }  = e.target;
         this.setState({
             [name]: value
         })  
     }
-
     render(){
         return(
             <div>
@@ -63,5 +53,4 @@ class ObrasSociales extends Component {
         )
     }
 }
-
 export default ObrasSociales;

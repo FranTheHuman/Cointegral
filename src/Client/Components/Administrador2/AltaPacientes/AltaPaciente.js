@@ -8,18 +8,16 @@ class AltaPaciente extends Component {
         super();
         this.state = {
             NuevoPaciente: { 
-                             Personal: { Nombre: "", Apellido: "", ObraSocial: "5b6afe88a365b446281df6f3", NºAfil:  "", FechaNac: "", Documento: null, Telefono: null, Email: "", Domicilio: "", EstadoCivil: "" }, 
+                             Personal: { Nombre: "", Apellido: "", ObraSocial: "5b6afe88a365b446281df6f3", NºAfil:  "", FechaNac: "", Documento: "", Telefono: "", Email: "", Domicilio: "", EstadoCivil: "" }, 
                              HistoriaClinica: { MedicoCabecera: "", ServUrgenciaBool: false, ServUrgen: "", HospitalizacionBool: false, HospitalizacionRazon: "", TratamientoMedicoBool: false, TratamientoMedicoRazon: "", Alergias: "", Afecciones: "", Medicamentos: "", FumaBool: false, FumaCuanto: 0, BebeBool: false, BebeCuanto: 0, EmbarazadaBool:  false, EmbarazadaTiempo: 0, ProblemaRadiante: false, Otros: "", Observaciones: "", DificultadHablar: false, DificultadMasticar: false, DificultadAbrirBoca: false, MovilidadEnDientes: false, EnciasSangrantes: false, PusBoca: false, PusDonde: "", EstadoHigieneBucal: "", 
                                                 EstadoDeTejidosBlandos: { Lengua: "", Carillos: "", PresentaSarro: false, Labios: "", PisoDeBoca: "", EstadoGfngivoPeropdontal: "", CantidadDientes: "", EnfermedadPeriodental: ""}} 
                            }, 
             ErrorVarialbe: null, 
             ObraSocial: []
-        };   
-        this.addPaciente = this.addPaciente.bind(this); 
-        this.MensajeFunction = this.MensajeFunction.bind(this); 
+        };    
     }
     // FUNCION PARA AGREGAR UN PACIENTE
-    addPaciente(event){
+    addPaciente = (event) => {
         fetch('/api/Paciente', {
                 method: 'POST',
                 body: JSON.stringify(this.state.NuevoPaciente),
@@ -30,7 +28,6 @@ class AltaPaciente extends Component {
             })
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data);
                     this.setState({NuevoPaciente: { 
                         Personal: { Nombre: "", Apellido: "", ObraSocial: "5b6afe88a365b446281df6f3", NºAfil:  "", FechaNac: "", Documento: 0, Telefono: 0, Email: "", Domicilio: "", EstadoCivil: "" }, 
                         HistoriaClinica: { MedicoCabecera: "", ServUrgenciaBool: false, ServUrgen: "", HospitalizacionBool: false, HospitalizacionRazon: "", TratamientoMedicoBool: false, TratamientoMedicoRazon: "", Alergias: "", Afecciones: "", Medicamentos: "", FumaBool: false, FumaCuanto: 0, BebeBool: false, BebeCuanto: 0, EmbarazadaBool:  false, EmbarazadaTiempo: 0, ProblemaRadiante: false, Otros: "", Observaciones: "", DificultadHablar: false, DificultadMasticar: false, DificultadAbrirBoca: false, MovilidadEnDientes: false, EnciasSangrantes: false, PusBoca: false, PusDonde: "", EstadoHigieneBucal: "", 
@@ -46,11 +43,10 @@ class AltaPaciente extends Component {
     // FUNCION PARA CONVERTIR LA PRIMERA LETRA EN MAYUSCULA
     MaysPrimera = (string) => { 
         const parametro = string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
-        console.log(parametro);
         return parametro;
     }
     // FUNCION PARA OBTENER LAS OBRAS SOCIALES
-    fetchObraSociales() { 
+    fetchObraSociales = () => { 
         fetch('/api/ObraSocial')  
             .then(res => res.json())
             .then(data => { 
@@ -61,7 +57,7 @@ class AltaPaciente extends Component {
         this.fetchObraSociales();
     }
     // FUNCION PARA MOSTREAR UNA MENSAJE DE ERROR SI LA CARGA TUVO UN PROBLEMA O DE SUCCESS SI LA CARGA FUE SATISFACTORIA
-    MensajeFunction(){
+    MensajeFunction = () => {
         if(this.state.ErrorVarialbe) {
             return (
                 <div className="alert alert-danger" role="alert">
@@ -78,7 +74,7 @@ class AltaPaciente extends Component {
     }
     // FUNCION PARA SETEAR LOS ESTADOS CORRESPONDIENTES CON LA COLUMNA 3 --> Personal
     handleChangePaciente = (e) => { 
-        const  { name, value }  = e.target;  
+        const  { name, value }  = e.target;   
             if(name === "Nombre" || name == "Apellido"){ 
                 let NuevoPacienteCopy = Object.assign({}, this.state.NuevoPaciente);     
                 NuevoPacienteCopy.Personal[name] = this.MaysPrimera(value);                         
@@ -98,17 +94,12 @@ class AltaPaciente extends Component {
             let NuevoPacienteCopy = Object.assign({}, this.state.NuevoPaciente);     
             NuevoPacienteCopy.HistoriaClinica[name] = checked;                         
             this.setState({NuevoPaciente:NuevoPacienteCopy});
-
-            console.log(`${name} ${checked}  // ${this.state.NuevoPaciente.HistoriaClinica[name]}`);
          } 
          else {           
             let NuevoPacienteCopy = Object.assign({}, this.state.NuevoPaciente);     
             NuevoPacienteCopy.HistoriaClinica[name] = value;                         
             this.setState({NuevoPaciente:NuevoPacienteCopy});
-
-            console.log(`${name} ${value}  // ${this.state.NuevoPaciente.HistoriaClinica[name]}`);
          } 
-        
     }
     // FUNCION PARA SETEAR LOS ESTADOS CORRESPONDIENTES CON LA COLUMNA 3 --> EstadoDeTejidosBlandos
     handleChangeColumna3 = (e) => {
@@ -117,14 +108,10 @@ class AltaPaciente extends Component {
             let NuevoPacienteCopy = Object.assign({}, this.state.NuevoPaciente);     
             NuevoPacienteCopy.HistoriaClinica.EstadoDeTejidosBlandos[name] = checked;                         
             this.setState({NuevoPaciente:NuevoPacienteCopy});
-
-            console.log(`${name} ${checked}  // ${this.state.NuevoPaciente.HistoriaClinica.EstadoDeTejidosBlandos[name]}`);
         } else {
             let NuevoPacienteCopy = Object.assign({}, this.state.NuevoPaciente);     
             NuevoPacienteCopy.HistoriaClinica.EstadoDeTejidosBlandos[name] = value;                         
             this.setState({NuevoPaciente:NuevoPacienteCopy});
-    
-            console.log(`${name} ${value}  // ${this.state.NuevoPaciente.HistoriaClinica.EstadoDeTejidosBlandos[name]}`);
         }
     }
     render(){

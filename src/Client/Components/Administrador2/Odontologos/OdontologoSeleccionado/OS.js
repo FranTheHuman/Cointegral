@@ -18,7 +18,7 @@ const Odontologoseleccionado= (props) => (
                         <p>Domicilio: {props.OS[0].Domicilio}</p>   
                     </div>
                     <div className="modal-footer">
-                        <p>Fecha de Alta al sistema: {props.OS[0].FechaAlta}</p> 
+                        <p>Fecha de Alta al sistema: {props.OS[0].FechaAlta.toString().substring(0, 10)}</p> 
                     </div>
             </div>
         </div>

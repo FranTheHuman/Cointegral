@@ -13,7 +13,7 @@ const FichaPersonal = (props) => (
             <input placeholder="Dni" type="text" className="form-control" value={props.NuevoPaciente.Personal.Documento} onChange={props.handleChange} name="Documento" maxLength="8"/>
         </div>
         <div className="form-group"> 
-            <input placeholder="Telefono" type="tel" className="form-control" value={props.NuevoPaciente.Personal.Telefono} onChange={props.handleChange} name="Telefono" pattern="[0-9]{7-10}"/>
+            <input placeholder="Telefono" type="tel" className="form-control" value={props.NuevoPaciente.Personal.Telefono} onChange={props.handleChange} name="Telefono"/>
             <small id="emailHelp" className="form-text text-muted">*Debe contener 10 caracteres para un celular y 7 para un fijo</small>
         </div>
         <div className="form-group"> 

@@ -25,9 +25,9 @@ const Turnos = (props) => (
                                     <td>{turno.FechaTurno.toString().substring(11, 16)}</td>
                                     <td>{`${turno.Especialista.Nombre} ${turno.Especialista.Apellido}`}</td>
                                     <td id="Botones">
-                                        <a onClick={()=>props.editTurnos(turno._id)} className="btn btn-success btn-sm mr-1">Confirmar</a>
-                                        <button type="button" className="btn btn-success btn-sm mr-1">Ausencia Anunciada</button>
-                                        <button type="button" className="btn btn-success btn-sm mr-1">Ausencia No Anunciada</button>
+                                        <a onClick={()=>props.ConfirmarTurno(turno._id)} className="btn btn-success btn-sm mr-1">Confirmar</a>
+                                        <a onClick={()=>props.AusenciaAnunciada(turno._id)} className="btn btn-success btn-sm mr-1">Ausencia Anunciada</a>
+                                        <a onClick={()=>props.AusenciaNoAnunciada(turno._id)} className="btn btn-success btn-sm mr-1">Ausencia No Anunciada</a>
                                     </td>
                                 </tr>
                             )

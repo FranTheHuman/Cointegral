@@ -31,7 +31,7 @@ class Edit extends Component {
                 .then(data => {
                     this.setState({NuevoPaciente: [
                         { 
-                            _id: "", Personal: { Nombre: "", Apellido: "", ObraSocial: "", NºAfil:  "", FechaNac: "", Documento: 0, Telefono: 0, Email: "", Domicilio: "", EstadoCivil: "" }, 
+                            _id: "", Personal: { Nombre: "", Apellido: "", ObraSocial: "", NºAfil:  "", FechaNac: "", Documento: "", Telefono: "", Email: "", Domicilio: "", EstadoCivil: "" }, 
                             HistoriaClinica: { MedicoCabecera: "", ServUrgenciaBool: false, ServUrgen: "", HospitalizacionBool: false, HospitalizacionRazon: "", TratamientoMedicoBool: false, TratamientoMedicoRazon: "", Alergias: "", Afecciones: "", Medicamentos: "", FumaBool: false, FumaCuanto: 0, BebeBool: false, BebeCuanto: 0, EmbarazadaBool:  false, EmbarazadaTiempo: 0, ProblemaRadiante: false, Otros: "", Observaciones: "", DificultadHablar: false, DificultadMasticar: false, DificultadAbrirBoca: false, MovilidadEnDientes: false, EnciasSangrantes: false, PusBoca: false, PusDonde: "", EstadoHigieneBucal: "", 
                                                EstadoDeTejidosBlandos: { Lengua: "", Carillos: "", PresentaSarro: false, Labios: "", PisoDeBoca: "", EstadoGfngivoPeropdontal: "", CantidadDientes: "", EnfermedadPeriodental: ""}} 
                         }
@@ -100,9 +100,7 @@ class Edit extends Component {
             let NuevoPacienteCopy = Object.assign({}, this.state.NuevoPaciente);     
             NuevoPacienteCopy[0].HistoriaClinica[name] = value;                         
             this.setState({NuevoPaciente:NuevoPacienteCopy});
-
          } 
-        
     }
     // FUNCION PARA SETEAR LOS ESTADOS CORRESPONDIENTES CON LA COLUMNA 3 --> EstadoDeTejidosBlandos
     handleChangeColumna3 = (e) => {
@@ -111,12 +109,10 @@ class Edit extends Component {
             let NuevoPacienteCopy = Object.assign({}, this.state.NuevoPaciente);     
             NuevoPacienteCopy[0].HistoriaClinica.EstadoDeTejidosBlandos[name] = checked;                         
             this.setState({NuevoPaciente:NuevoPacienteCopy});
-
         } else {
             let NuevoPacienteCopy = Object.assign({}, this.state.NuevoPaciente);     
             NuevoPacienteCopy[0].HistoriaClinica.EstadoDeTejidosBlandos[name] = value;                         
             this.setState({NuevoPaciente:NuevoPacienteCopy});
-    
         }
     }
     render(){

@@ -48,7 +48,7 @@ PACIENTES - SEARCH SECTION
 #BusquedaPacientes{
     margin-top: 20px;
     margin-bottom: 20px; 
-    margin-left: 660px;
+    margin-left: 20px;
 }
 /**********************
 PACIENTES - TABLE SECTION
@@ -83,7 +83,7 @@ TURNOS - TABLA
     margin-top: 15px;
 }
 /**********************
-FALTA PACIENTES - FORM SECTION
+ALTA PACIENTES - FORM SECTION
 ***********************/
 #FormularioPacientes{
     margin-left: 15px;
@@ -291,7 +291,7 @@ Responsive
        margin-left: 90px;
    }
    #BajoTratEnfBool{
-       margin-left: 20px;
+       margin-left: 10px;
    }
    #fumaBool, #bebeBool{
        margin-left: 150px;
@@ -314,6 +314,9 @@ Responsive
    #SangranEncias{
        margin-left: 55px;
    }
+   #ProblemaRadiante{
+    margin-left: 100px;
+    }
 }
 @media screen and (max-width: 1500px) {
    #odontograma-UWU{

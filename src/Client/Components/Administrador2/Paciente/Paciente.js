@@ -53,7 +53,6 @@ class Paciente extends Component {
         this.state.Paciente[0].Odontograma[this.state.PiezaSeleccionada].map(t => { // recorre la pieza seleccionada
             if (t.Estado.Confirmado != true) { // Si encuentra un tratamiento no confirmado  
                 this.setState({ErrorVarialbe:true});
-                console.log(t);
             } else {
                 contador++;
             }
@@ -62,7 +61,6 @@ class Paciente extends Component {
                 let PacienteCopy = Object.assign({}, this.state.Paciente);     
                 PacienteCopy[0].Odontograma[this.state.PiezaSeleccionada].push(this.state.Nuevo);                        
                 this.setState({Paciente:PacienteCopy});
-                console.log(this.state.Paciente)
                 fetch(`/api/Paciente/${this.props.match.params.id}`, {
                     method: 'PUT',
                     body: JSON.stringify(this.state.Paciente[0]),
@@ -85,7 +83,6 @@ class Paciente extends Component {
             let NuevoCopy = Object.assign({}, this.state.Nuevo);     
             NuevoCopy.Caras[name] = checked;                         
             this.setState({Nuevo:NuevoCopy});
-
             if(this.state.Nuevo.Caras.PzComplet == true){
                     let NuevoCopy2 = Object.assign({}, this.state.Nuevo);   
                     NuevoCopy2.Caras.Mesial = false;
@@ -95,9 +92,7 @@ class Paciente extends Component {
                     NuevoCopy2.Caras.Lingual = false;
                     NuevoCopy2.Caras.Vestibular = false;                        
                     this.setState({Nuevo:NuevoCopy2});
-            }  
-
-            console.log(`${name} ${checked}  // ${this.state.Nuevo.Caras.Mesial}`);       
+            }        
     }
     // MENSAJE QUE SE MUESTRA CUANDO SE QUIERE AÑADIR UN TRATAMIENTO A UNA PIEZA QUE AUN POSEE UN TRATAMIENTO SIN CONFIRMAR
     MensajeFunction = () => {
@@ -120,9 +115,7 @@ class Paciente extends Component {
         const  { value }  = e.target;  
             let NuevoCopy = Object.assign({}, this.state.Nuevo);     
             NuevoCopy.Observaciones = value;                         
-            this.setState({Nuevo:NuevoCopy});
-
-            console.log(`${value}  // ${this.state.Nuevo[Observaciones]}`);       
+            this.setState({Nuevo:NuevoCopy});     
     }
     // OBTENER OBRA SOCIAL
     fetchObraSocial = (id) => { 

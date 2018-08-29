@@ -8,19 +8,18 @@ class Home extends Component {
         this.state = {
             Turnos: [],
             Pacientes: []       
-        };  
-        this.fetchTurnos = this.fetchTurnos.bind(this);
-        this.TipoMensaje = this.TipoMensaje.bind(this);
-        this.editTurnos = this.editTurnos.bind(this);
+        };   
     }
-    fetchTurnos() { 
+    // FUNCION PARA OBTENER TODOS LOS TURNOS
+    fetchTurnos = () => { 
         fetch('/api/Turnos')  
             .then(res => res.json())
             .then(data => { 
                 this.setState({Turnos: data}); 
             } );
     } 
-    editTurnos(id) {
+    // FUNCION PARA CONFIRMAR EL TURNO
+    ConfirmarTurno = (id) => {
         fetch(`/api/TurnosConfirmar/${id}`, {
                 method: 'PUT',
                 headers: {
@@ -30,13 +29,39 @@ class Home extends Component {
             })
         .then(this.fetchTurnos())
     }
-    TipoMensaje(){
+    // FUNCION PARA SETEAR LA ASUCENCIA ANUNCIADA : TRUE
+    AusenciaAnunciada = (id) => {
+        fetch(`api/TurnosAusenciaAnunciada/${id}`, {
+            method: 'PUT',
+            headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+            }  
+        })
+    .then(this.fetchTurnos())
+    }
+    // FUNCION PARA SETEAR LA ASUCENCIA ANUNCIADA : FALSE
+    AusenciaNoAnunciada = (id) => {
+        fetch(`api/TurnosAusenciaAnunciada/${id}`, {
+            method: 'PUT',
+            headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+            }  
+        })
+    .then(this.fetchTurnos())
+    }
+    TipoMensaje = () => {
         let contador = 0;
-        this.state.Turnos.map(turnos => { //RECORREMOS LOS TURNOS BUSCANDO TURNOS DEL DIA DE HOY
-            const turno = new Date(turnos.FechaTurno).setHours(0,0,0,0); // DIA DEL TURNO
-            const hoy = new Date().setHours(0,0,0,0);           
-            if (turno == hoy) { // SI el turno y el dia de hoy son iguales
-                if (turno.Asistio == false) { // SI el turno aun no esta confirmado
+        const hoyDia = new Date().getDate();
+        const hoyMes = new Date().getMonth();
+        const hoyAño = new Date().getFullYear(); 
+        this.state.Turnos.map(turno => { //RECORREMOS LOS TURNOS BUSCANDO TURNOS DEL DIA DE HOY
+            const turnoDia = new Date(turno.FechaTurno).getDate();  
+            const turnoMes = new Date(turno.FechaTurno).getMonth();
+            const turnoAño = new Date(turno.FechaTurno).getFullYear();
+            if (hoyDia == turnoDia && hoyMes == turnoMes && hoyAño == turnoAño) { // SI el turno y el dia de hoy son iguales
+                if (turno.Asistio == null) { // SI el turno aun no esta ni en false ni en true
                     contador++;
                 }
             }             
@@ -52,7 +77,13 @@ class Home extends Component {
         return(
             <div>
                 <Mensaje TipoMensaje={this.TipoMensaje}/>
-                <Turnos Turnos={this.state.Turnos} editTurnos={this.editTurnos} SetIdPaciente={this.props.SetIdPaciente}/>
+                <Turnos 
+                    Turnos={this.state.Turnos} 
+                    ConfirmarTurno={this.ConfirmarTurno} 
+                    SetIdPaciente={this.props.SetIdPaciente}
+                    AusenciaAnunciada={this.AusenciaAnunciada}
+                    AusenciaNoAnunciada={this.AusenciaNoAnunciada}
+                />
             </div>
         )
     }

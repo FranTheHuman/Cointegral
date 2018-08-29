@@ -20,7 +20,6 @@ class Odontologos extends Component {
             ]        
         };  
     }
-
     fetchOdontologos = () => { 
         fetch('/api/Odontologos')  
             .then(res => res.json())
@@ -28,11 +27,9 @@ class Odontologos extends Component {
                 this.setState({Odontologo: data}); 
             } );
     } 
-    
     componentDidMount = () => {
         this.fetchOdontologos(); 
     }
-
     addOdontologo =(event) =>{
         fetch('/api/Odontologos', {
                 method: 'POST',
@@ -44,14 +41,12 @@ class Odontologos extends Component {
             })
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data); 
                     this.setState({ Nombre: '' , Apellido: '', Documento: 0, Telefono: 0, Email: '', Domicilio: '', Especialidad:''});
                     this.fetchOdontologos();
                 })
                 .catch(err => console.log(err));
         event.preventDefault();
     }
-
     handleChange = (e) => {
         const  { name, value }  = e.target;
         this.setState({

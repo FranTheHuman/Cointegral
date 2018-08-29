@@ -6,20 +6,27 @@
 - Diseño y creacion de la estructura de datos.                                                     - LISTO
 - Estructurar aplicacion de cliente, Administrador2 (React).                                       - LISTO
 - Crear las api's.                                                                                 - LISTO
-- Aplicacion Cliente con datos dinamicos. (Turnos)
-- Validacion de los datos. 
-- Manejo de errores y solucion.
+- Aplicacion Administrador 2 con datos dinamicos.                                                  - LISTO
+- Validacion de los datos.  
 ----------------------------------------------------------------------------------------------------------
-- Pausa para hacer un proyecto integrando GrapQL, React, Mongodb, Redux, React-Router, NodeJs.
+- Pausa para hacer un proyecto integrando 
+    . ABM de juegos.
+    // 2 aplicaciones diferentes, unidas al final. 
+    // Backend -->  GrapHQL, NodeJs Mongodb
+    // Fontend --> React, Redux, React-Router/Navigation
+    Buscar y practicar: 
+        . Inmutabilidad.
+        . Normalizacion.
+        . GrapHQL con mongodb.
 ----------------------------------------------------------------------------------------------------------
-#Segunda parte
+#Segunda parte [SEGUIR LUEGO DEL PROYECTO DE DESCANSO]
 ----------------------------------------------------------------------------------------------------------
-- Aprender mas de la navegacion.
-- Diseño de la pagina (Administrador1).   
+- Mejorar la navegacion.
+- Diseño de la pagina (Administrador1) con redux.   
 - Estructurar aplicacion de cliente (Administrador1).
 - Aplicacion Cliente con datos dinamicos para administrador1.
 ----------------------------------------------------------------------------------------------------------
-- Pausa para continuar y terminar proyecto integrando GrapQL, React, Mongodb, Redux, React-Router, NodeJs.
+- Pausa para continuar y con el ABM de juegos. 
 ----------------------------------------------------------------------------------------------------------
 #Tercera parte
 ----------------------------------------------------------------------------------------------------------
@@ -28,7 +35,7 @@
 - Aprender a hacer reportes en mongoDB.
 - Aprender a imprimir inrformacion.
 ----------------------------------------------------------------------------------------------------------
-- Pausa para organizar el objetivo, funciones y limites de la PS. (REACT, REDUX, MONGODB, GRAPHQL, NODEJS)
+- Pausa para terminar con el ABM de juegos. 
 ----------------------------------------------------------------------------------------------------------
 #Cuarta parte
 ----------------------------------------------------------------------------------------------------------
@@ -37,7 +44,8 @@
 - Aprender a hacer test con nodeJs.
 - Minificar todo. 
 ----------------------------------------------------------------------------------------------------------
-- Determinar la info a buscar para defender el codigo --> (Babel, react, redux, MVC, git, package.json, npm/yarn, webpack, mongodb, passport, modulos, javascript modular, componentes, nodeJs, express, HTTP, Apis, Promesas, ASync Await, programacion funcional)
+- Pausa para organizar el objetivo, funciones y limites de la PS. 
+- Determinar la info a buscar para defender el codigo --> (Babel, react, redux, MVC, git, package.json, npm/yarn, webpack, mongodb, passport, modulos, javascript modular, componentes, nodeJs, express, HTTP, Apis, Promesas, ASync Await, programacion funcional, Inmutabilidad , Normalizacion)
 ----------------------------------------------------------------------------------------------------------
 #Quinta parte
 ----------------------------------------------------------------------------------------------------------

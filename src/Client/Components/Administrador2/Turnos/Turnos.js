@@ -14,13 +14,12 @@ class Turnos extends Component {
             Mes: 0,
             // Nuevo Turno
             ParametroBusqueda: "",
-            PacienteResultado: [ { _id: "", Personal: { } } ],
+            PacienteResultado: [ { _id: "", Personal: { Nombre: "Resultado: ", Apellido: "Nombre Completo", Documento: "Resultado: DNI" } } ],
             nuevoTurno : { Paciente: "", FechaTurno: "", Especialista: "",  Duracion: "15" },
             // Turnos
             Turnos: [ { _id: "", Asistio: null, AusenciaAnunciada: null, Paciente: { _id:"", Personal: { Nombre: "", Apellido: "" } }, FechaTurno: "", Especialista: { _id: "" }, Duracion: 15 } ], 
             Pacientes: [ { _id: "", Personal: { Nombre: "", Apellido: "" } } ],
-            EspecialistaSeleccionado: { _id: "", Nombre: "Especialista", Apellido: "", Turnos: [], Especialidad: "", Telefono: "", Documento: "", Email: "", Domicilio: "" },
-            BloqueBloquado: null
+            EspecialistaSeleccionado: { _id: "", Nombre: "Especialista", Apellido: "", Especialidad: "", Telefono: "", Documento: "", Email: "", Domicilio: "" },
         };     
     }
     // Obtener todos los odontologos
@@ -31,6 +30,22 @@ class Turnos extends Component {
                 this.setState({Odontologos: data}); 
             } );
     } 
+    // Obtener todos los turnos 
+    fetchTurnos = () => { 
+        fetch('/api/Turnos')  
+            .then(res => res.json())
+            .then(data => { 
+                this.setState({Turnos: data}); 
+            } );
+    } 
+    // Obtener los pacientes 
+    fetchPacientes = () => {
+        fetch('/api/Pacientes')  
+        .then(res => res.json())
+        .then(data => { 
+            this.setState({Pacientes: data}); 
+        } );
+    }
     // Buscar Paciente
     searchPaciente = () => { 
         if(this.state.ParametroBusqueda != ""){
@@ -48,7 +63,7 @@ class Turnos extends Component {
         }
     } 
     // Guardar turno
-    saveTurno = (event) => {
+    saveTurno = () => {
         if(this.state.nuevoTurno.Paciente != "" && this.state.nuevoTurno.Especialista != ""){
             fetch('/api/Turnos', {
                 method: 'POST',
@@ -66,8 +81,8 @@ class Turnos extends Component {
                 .catch(err => {
                     console.log(err); 
                 });
-        }     
-    event.preventDefault();
+                this.fetchTurnos();
+        }      
     } 
     // Funcion para capturar el horario al abrir el modal de nuevo turno
     HandleChangeHorario = (horario, dia) => {
@@ -77,14 +92,13 @@ class Turnos extends Component {
             FechaFinal = `${new Date().getFullYear()}-0${mes}-${this.state.Dias[dia]}T${horario}:00.000Z`;
         } else {
             FechaFinal = `${new Date().getFullYear()}-${mes}-${this.state.Dias[dia]}T${horario}:00.000Z`;
-        }
-
-        
+        }       
         console.log("FechaFinal:", FechaFinal);
         this.state.nuevoTurno.FechaTurno = FechaFinal; 
         console.log("nuevoTurno",this.state.nuevoTurno )
+        return false;
     }
-    // Funcion para setear el ParametroBusqueda de busqueda
+     // Funcion para setear el ParametroBusqueda de busqueda
     handleChangeParametroBusqueda = (e) => {
         const  { value }  = e.target;
         this.setState({
@@ -378,10 +392,10 @@ class Turnos extends Component {
                 }
             }        
     }
-
     componentDidMount() {
         this.fetchOdontologos(); 
         this.SetearDiasInicio(); 
+        this.fetchTurnos();
     }
     render(){
         return(
@@ -402,11 +416,14 @@ class Turnos extends Component {
                 <ModalDesbloqueo/>
                 <TablaTurnos 
                     Dias={this.state.Dias} 
+                    Mes={this.state.Mes}
                     PasarSemana={this.PasarSemana} 
                     VolverSemana={this.VolverSemana}
                     EspecialistaSeleccionado={this.state.EspecialistaSeleccionado}
                     Turnos={this.state.Turnos} 
                     HandleChangeHorario={this.HandleChangeHorario}
+                    Pacientes={this.state.Pacientes}
+                    DeterminarTablaTurnos={this.DeterminarTablaTurnos}     
                 />
             </div>
         )

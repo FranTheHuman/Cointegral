@@ -11,7 +11,6 @@ class Pacientes extends Component {
             ParametroBuscar: ''
         };  
     }
-
     fetchPacientes = () => { 
         fetch('/api/Pacientes')  
             .then(res => res.json())

@@ -1,8 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class ModalDesbloqueo extends Component {
-    render() {
-        return(
+const ModalDesbloqueo = () => (
             <div className="modal fade" id="exampleModalDESBLOQUEO" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog" role="document">
                     <div className="modal-content" id="MODAL">
@@ -19,7 +17,5 @@ class ModalDesbloqueo extends Component {
                 </div>
             </div>
         )
-    }
-}
-
+        
 export default ModalDesbloqueo;

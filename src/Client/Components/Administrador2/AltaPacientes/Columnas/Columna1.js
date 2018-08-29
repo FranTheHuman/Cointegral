@@ -28,7 +28,7 @@ const Columna1 = (props) => (
         <div className="form-group"> 
             <div className="input-group">
                 <div className="input-group-prepend">
-                    <span className="input-group-text">¿Hospitalizacion en los ultimos años?</span>
+                    <span className="input-group-text">¿Hospitalizacion?</span>
                 </div>
                 <input type="checkbox" className="form-control" name="HospitalizacionBool" id="HospitBool" value={props.NuevoPaciente.HistoriaClinica.HospitalizacionBool} onChange={props.handleChange}/>                                             
             </div>

@@ -31,8 +31,7 @@ const ModalTurnos = (props) => (
                             </div>
                         </div>
                         <div className="modal-footer"> 
-                            <button type="button" className="btn btn-success" onClick={props.saveTurno}>Guardar Turno</button>
-                            <button type="button" className="btn btn-danger">Bloquear Espacio</button>
+                            <button type="button" className="btn btn-success" onClick={props.saveTurno}>Guardar Turno</button> 
                         </div>
                     </div>
                 </div>
