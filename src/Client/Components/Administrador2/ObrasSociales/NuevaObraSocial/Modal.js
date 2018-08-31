@@ -4,6 +4,7 @@ const  ModalAltaObraSocial = (props) => (
     <div className="modal fade" id="ModalAltaObraSocial" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div className="modal-dialog" role="document">
             <div className="modal-content" id="MODAL">
+            {props.MensajeFunction()}
                 <form onSubmit={props.addObraSocial}>
                     <div className="modal-header">
                     <h5 className="modal-title" id="exampleModalLabel">Nueva Obra Social</h5>

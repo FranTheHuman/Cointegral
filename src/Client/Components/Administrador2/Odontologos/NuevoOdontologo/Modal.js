@@ -10,6 +10,7 @@ const ModalAltaOdontologos= (props) => (
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
+                {props.MensajeFunction()}
                 <form onSubmit={props.addOdontologo}>
                     <div className="modal-body">
                         <div className="form-group"> 

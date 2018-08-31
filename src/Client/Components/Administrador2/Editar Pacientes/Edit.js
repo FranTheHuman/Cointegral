@@ -3,6 +3,7 @@ import FichaPersonal from './Columnas/FichaPersonal';
 import Columna1 from './Columnas/Columna1';
 import Columna2 from './Columnas/Columna2';
 import Columna3 from './Columnas/Columna3'; 
+import Val from '../../../../public/js/Validacion/index';
 class Edit extends Component {
     constructor() {
         super();
@@ -19,7 +20,16 @@ class Edit extends Component {
         };   
     }
     EditPaciente = (event) => {
-        fetch(`/api/Paciente/${this.state.NuevoPaciente[0]._id}`, {
+        let NewPCopy = Object.assign({}, this.state.NuevoPaciente);  
+        if(  // Validamos los datos personales
+            Val.ValidarNombres(NewPCopy.Personal.Nombre) == false ||
+            Val.ValidarNombres(NewPCopy.Personal.Apellido) == false ||
+            Val.ValidarDNI(NewPCopy.Personal.NºAfil) == false || 
+            Val.ValidarDNI(NewPCopy.Personal.Documento) == false ||
+            Val.ValidarEstadoCivil(NewPCopy.Personal.EstadoCivil) == false 
+        ) { this.setState({ErrorVarialbe: true}); event.preventDefault(); return null; }
+        else {
+            fetch(`/api/Paciente/${this.state.NuevoPaciente[0]._id}`, {
                 method: 'PUT',
                 body: JSON.stringify(this.state.NuevoPaciente[0]),
                 headers: {
@@ -41,7 +51,8 @@ class Edit extends Component {
                     console.log(err);
                     this.setState({ErrorVarialbe: true}); 
                 });
-                event.preventDefault();            
+                event.preventDefault();  
+        }        
     }
     // FUNCION PARA OBTENER LAS OBRAS SOCIALES
     fetchObraSociales = () => { 

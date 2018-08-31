@@ -3,6 +3,7 @@ import FichaPersonal from './Columnas/FichaPersonal';
 import Columna1 from './Columnas/Columna1';
 import Columna2 from './Columnas/Columna2';
 import Columna3 from './Columnas/Columna3'; 
+import Val from '../../../../public/js/Validacion/index';
 class AltaPaciente extends Component {
     constructor() {
         super();
@@ -18,7 +19,16 @@ class AltaPaciente extends Component {
     }
     // FUNCION PARA AGREGAR UN PACIENTE
     addPaciente = (event) => {
-        fetch('/api/Paciente', {
+        let NewPCopy = Object.assign({}, this.state.NuevoPaciente);  
+        if(  // Validamos los datos personales
+            Val.ValidarNombres(NewPCopy.Personal.Nombre) == false ||
+            Val.ValidarNombres(NewPCopy.Personal.Apellido) == false ||
+            Val.ValidarDNI(NewPCopy.Personal.NºAfil) == false || 
+            Val.ValidarDNI(NewPCopy.Personal.Documento) == false ||
+            Val.ValidarEstadoCivil(NewPCopy.Personal.EstadoCivil) == false 
+        ) { this.setState({ErrorVarialbe: true}); event.preventDefault(); return null; }
+        else {
+            fetch('/api/Paciente', {
                 method: 'POST',
                 body: JSON.stringify(this.state.NuevoPaciente),
                 headers: {
@@ -38,7 +48,8 @@ class AltaPaciente extends Component {
                     console.log(err);
                     this.setState({ErrorVarialbe: true}); 
                 });
-        event.preventDefault();
+            event.preventDefault();
+        }
     }
     // FUNCION PARA CONVERTIR LA PRIMERA LETRA EN MAYUSCULA
     MaysPrimera = (string) => { 
@@ -75,7 +86,7 @@ class AltaPaciente extends Component {
     // FUNCION PARA SETEAR LOS ESTADOS CORRESPONDIENTES CON LA COLUMNA 3 --> Personal
     handleChangePaciente = (e) => { 
         const  { name, value }  = e.target;   
-            if(name === "Nombre" || name == "Apellido"){ 
+            if(name === "Nombre" || name == "Apellido" || name == "EstadoCivil"){ 
                 let NuevoPacienteCopy = Object.assign({}, this.state.NuevoPaciente);     
                 NuevoPacienteCopy.Personal[name] = this.MaysPrimera(value);                         
                 this.setState({NuevoPaciente:NuevoPacienteCopy});
