@@ -7,7 +7,7 @@
 - Estructurar aplicacion de cliente, Administrador2 (React).                                       - LISTO
 - Crear las api's.                                                                                 - LISTO
 - Aplicacion Administrador 2 con datos dinamicos.                                                  - LISTO
-- Validacion de los datos.  
+- Validacion de los datos.                                                                         - LISTO
 ----------------------------------------------------------------------------------------------------------
 - Pausa para hacer un proyecto integrando 
     . ABM de juegos.
